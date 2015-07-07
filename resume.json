@@ -4,12 +4,9 @@
     "label": "Software Designer",
     "picture": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAI7AAAAJDE5ZDY4YzIwLWYyY2QtNDI0OS04YzBiLWYwMWIyYWM5MjJmMQ.jpg",
     "email": "seenarowhani95@gmail.com",
-    "phone": "613-868-2590",
     "website": "http://github.com/srowhani",
     "summary": "A student of Carleton University, majoring in the field of Software Engineering. My goal is to pursue my passion in software and applications development, and apply the education that's been received in the real world. The beginning of this pursuit has taken the shape of the application design, peer mentoring services, and the university studies.",
     "location": {
-      "address": "21 Buttonwood Trail",
-      "postalCode": "K2S1C9",
       "city": "Ottawa",
       "countryCode": "CA",
       "region": "Ontario"
@@ -34,6 +31,11 @@
         "network" : "Facebook",
         "username": "seena.rowhani",
         "url" : "https://www.facebook.com/seena.rowhani"
+      },
+      {
+        "network" : "Instagram",
+        "username" : "seenarowhani",
+        "url" : "https://instagram.com/seenarowhani/"
       }
     ]
   },
@@ -114,7 +116,7 @@
         "COMP 2401 - Systems Programming",
         "COMP 2404 - Data Structures and Algorithms",
         "COMP 1805 - Discrete Structures I",
-        "CGNS - 1001 - Cognitive Science"
+        "CGNS 1001 - Cognitive Science"
       ]
     }
   ],
