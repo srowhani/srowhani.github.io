@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,730 +10,857 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <!-- link rel="shortcut icon" href="favicon.ico" / -->
     <style>
-      .relative {
-  position: relative;
-}
-.clear-margin {
-  margin: 0;
-}
-.space-top {
-  margin-top: 10px;
-}
-.space-right {
-  margin-right: 10px;
-}
-.icon-left {
-  margin-right: 5px;
-}
-.icon-right {
-  margin-left: 5px;
-}
-.labels {
-  word-spacing: 5px;
-  line-height: 2;
-}
-.label-keyword {
-  display: inline-block;
-  background: #7eb0db;
-  color: white;
-  font-size: 0.9em;
-  padding: 5px;
-  border: 1px solid #357ebd;
-}
-.link-disguise {
-  color: inherit;
-}
-.link-disguise:hover {
-  color: inherit;
-}
-.clear-margin {
-  margin: 0;
-}
-@media (max-width: 992px) {
-  .clear-margin-sm {
-    margin-bottom: 0;
-  }
-}
-body {
-  font-family: 'Lato';
-  background: #f0f0f0;
-  color: #333333;
-}
-.main {
-  padding: 5px;
-}
-.card {
-  background: #ffffff;
-  border: 1px solid #e6e6e6;
-  border-radius: 3px;
-  min-height: 300px;
-  padding: 10px;
-}
-.card-nested {
-  min-height: 0;
-  margin-bottom: 10px;
-  border-width: 1px 0 0 0;
-}
-.card-nested:before,
-.card-nested:after {
-  content: " ";
-  display: table;
-}
-.card-nested:after {
-  clear: both;
-}
-@media (max-width: 480px) {
-  .card-nested {
-    padding: 5px 0;
-  }
-}
-.background-card {
-  padding: 10px 20px;
-}
-.card-wrapper {
-  padding: 5px;
-}
-@media (max-width: 992px) {
-  .card-wrapper {
-    float: none !important;
-  }
-}
-.text-bolder {
-  font-weight: bold;
-}
-.background-details .detail {
-  display: table;
-  padding: 10px 0;
-}
-.background-details .detail .icon {
-  min-width: 45px;
-  max-width: 45px;
-  text-align: center;
-}
-.background-details .detail .info {
-  width: 100%;
-}
-.background-details .detail .title,
-.background-details .detail .icon {
-  color: #707070;
-}
-.background-details .detail .mobile-title {
-  display: none;
-}
-@media (max-width: 480px) {
-  .background-details .detail .mobile-title {
-    display: inline-block;
-    margin-left: 5px;
-    font-weight: bold;
-    text-transform: uppercase;
-    vertical-align: middle;
-  }
-}
-.background-details .detail .icon,
-.background-details .detail .info {
-  display: table-cell;
-  padding: 0 10px;
-}
-@media (max-width: 480px) {
-  .background-details .detail {
-    display: block;
-  }
-  .background-details .detail .icon {
-    max-width: inherit;
-    min-width: inherit;
-    text-align: left;
-  }
-  .background-details .detail .icon,
-  .background-details .detail .info {
-    display: block;
-    padding: 10px 0;
-  }
-  .background-details .detail .title {
-    display: none;
-  }
-}
-.info .content.has-sidebar {
-  width: 80%;
-  box-sizing: border-box;
-  float: left;
-  padding: 0 10px;
-  border-right: 1px solid #cdcdcd;
-}
-@media (max-width: 992px) {
-  .info .content.has-sidebar {
-    width: 100%;
-    border-right: 0;
-  }
-}
-@media (max-width: 480px) {
-  .info .content.has-sidebar {
-    padding: 0 2px;
-  }
-}
-.info .sidebar {
-  margin-left: 80%;
-  box-sizing: border-box;
-  padding: 10px;
-}
-@media (max-width: 480px) {
-  ul {
-    padding-left: 25px;
-  }
-}
-.current-event {
-  font-size: 8px;
-  color: #5ACE24;
-  position: absolute;
-  right: 100%;
-  top: 4px;
-  left: -10px;
-}
-/*
+    .relative {
+        position: relative;
+    }
+    
+    .clear-margin {
+        margin: 0;
+    }
+    
+    .space-top {
+        margin-top: 10px;
+    }
+    
+    .space-right {
+        margin-right: 10px;
+    }
+    
+    .icon-left {
+        margin-right: 5px;
+    }
+    
+    .icon-right {
+        margin-left: 5px;
+    }
+    
+    .labels {
+        word-spacing: 5px;
+        line-height: 2;
+    }
+    
+    .label-keyword {
+        display: inline-block;
+        background: #7eb0db;
+        color: white;
+        font-size: 0.9em;
+        padding: 5px;
+        border: 1px solid #357ebd;
+    }
+    
+    .link-disguise {
+        color: inherit;
+    }
+    
+    .link-disguise:hover {
+        color: inherit;
+    }
+    
+    .clear-margin {
+        margin: 0;
+    }
+    
+    @media (max-width: 992px) {
+        .clear-margin-sm {
+            margin-bottom: 0;
+        }
+    }
+    
+    body {
+        font-family: 'Lato';
+        background: #f0f0f0;
+        color: #333333;
+    }
+    
+    .main {
+        padding: 5px;
+    }
+    
+    .card {
+        background: #ffffff;
+        border: 1px solid #e6e6e6;
+        border-radius: 3px;
+        min-height: 300px;
+        padding: 10px;
+    }
+    
+    .card-nested {
+        min-height: 0;
+        margin-bottom: 10px;
+        border-width: 1px 0 0 0;
+    }
+    
+    .card-nested:before,
+    .card-nested:after {
+        content: " ";
+        display: table;
+    }
+    
+    .card-nested:after {
+        clear: both;
+    }
+    
+    @media (max-width: 480px) {
+        .card-nested {
+            padding: 5px 0;
+        }
+    }
+    
+    .background-card {
+        padding: 10px 20px;
+    }
+    
+    .card-wrapper {
+        padding: 5px;
+    }
+    
+    @media (max-width: 992px) {
+        .card-wrapper {
+            float: none !important;
+        }
+    }
+    
+    .text-bolder {
+        font-weight: bold;
+    }
+    
+    .background-details .detail {
+        display: table;
+        padding: 10px 0;
+    }
+    
+    .background-details .detail .icon {
+        min-width: 45px;
+        max-width: 45px;
+        text-align: center;
+    }
+    
+    .background-details .detail .info {
+        width: 100%;
+    }
+    
+    .background-details .detail .title,
+    .background-details .detail .icon {
+        color: #707070;
+    }
+    
+    .background-details .detail .mobile-title {
+        display: none;
+    }
+    
+    @media (max-width: 480px) {
+        .background-details .detail .mobile-title {
+            display: inline-block;
+            margin-left: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            vertical-align: middle;
+        }
+    }
+    
+    .background-details .detail .icon,
+    .background-details .detail .info {
+        display: table-cell;
+        padding: 0 10px;
+    }
+    
+    @media (max-width: 480px) {
+        .background-details .detail {
+            display: block;
+        }
+        .background-details .detail .icon {
+            max-width: inherit;
+            min-width: inherit;
+            text-align: left;
+        }
+        .background-details .detail .icon,
+        .background-details .detail .info {
+            display: block;
+            padding: 10px 0;
+        }
+        .background-details .detail .title {
+            display: none;
+        }
+    }
+    
+    .info .content.has-sidebar {
+        width: 80%;
+        box-sizing: border-box;
+        float: left;
+        padding: 0 10px;
+        border-right: 1px solid #cdcdcd;
+    }
+    
+    @media (max-width: 992px) {
+        .info .content.has-sidebar {
+            width: 100%;
+            border-right: 0;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .info .content.has-sidebar {
+            padding: 0 2px;
+        }
+    }
+    
+    .info .sidebar {
+        margin-left: 80%;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    
+    @media (max-width: 480px) {
+        ul {
+            padding-left: 25px;
+        }
+    }
+    
+    .current-event {
+        font-size: 8px;
+        color: #5ACE24;
+        position: absolute;
+        right: 100%;
+        top: 4px;
+        left: -10px;
+    }
+    /*
     Credits: http://codyhouse.co/demo/smart-fixed-navigation/index.html
 */
-.floating-nav-trigger {
-  width: 50px;
-  height: 50px;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
-  -webkit-transition: background-color 0.5s ease;
-  -o-transition: background-color 0.5s ease;
-  transition: background-color 0.5s ease;
-  display: block;
-  border-radius: 50%;
-  text-align: center;
-  padding-top: 10px;
-  background-color: white;
-  font-size: 1.5em;
-  color: #357ebd;
-  z-index: 100;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-}
-.floating-nav-trigger .close-icon {
-  display: none;
-}
-.floating-nav-trigger:hover {
-  color: #1f496e;
-  background-color: #e6e6e6;
-  text-decoration: none;
-}
-.floating-nav-trigger.is-open {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-.floating-nav-trigger.is-open .close-icon {
-  display: inherit;
-}
-.floating-nav-trigger.is-open .fa-bars {
-  display: none;
-}
-.floating-nav-trigger.is-open:hover {
-  background-color: white;
-}
-.floating-nav {
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  -o-transform: scale(0);
-  transform: scale(0);
-  -webkit-transform-origin: 100% 100%;
-  -moz-transform-origin: 100% 100%;
-  -ms-transform-origin: 100% 100%;
-  transform-origin: 100% 100%;
-  -webkit-transition: transform 0.3s, visibility 0s 0.3s;
-  -o-transition: transform 0.3s, visibility 0s 0.3s;
-  transition: transform 0.3s, visibility 0s 0.3s;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
-  position: fixed;
-  z-index: 50;
-  right: 10px;
-  bottom: 10px;
-  background-color: white;
-  width: 90%;
-  max-width: 400px;
-  visibility: hidden;
-  overflow: hidden;
-}
-.floating-nav ul {
-  font-size: 1.2em;
-  margin: 0;
-}
-.floating-nav ul li {
-  border-bottom: 1px solid #eff2f6;
-}
-.floating-nav ul li a {
-  padding: 20px;
-  text-decoration: none;
-  color: #357ebd;
-  display: block;
-}
-.floating-nav ul li a:hover {
-  color: #1f496e;
-}
-.floating-nav ul li i.fa {
-  margin-right: 10px;
-}
-.floating-nav ul li:last-child {
-  border-bottom: 0;
-}
-.floating-nav.is-visible {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: transform 0.3s, visibility 0s 0s;
-  -o-transition: transform 0.3s, visibility 0s 0s;
-  transition: transform 0.3s, visibility 0s 0s;
-  visibility: visible;
-}
-@media (max-width: 992px) {
-  .profile-card-wrapper {
-    position: relative;
-  }
-}
-.profile-pic {
-  padding: 20px 0;
-}
-@media (max-width: 992px) {
-  .profile-pic {
-    padding: 10px 0;
-  }
-}
-.profile-pic img {
-  width: 100px;
-  height: 100px;
-}
-@media (max-width: 992px) {
-  .name {
-    margin-top: 10px;
-  }
-}
-@media (max-width: 768px) {
-  .contact-details {
-    text-align: center;
-  }
-}
-.contact-details .detail {
-  display: table;
-  padding: 10px 0;
-}
-.contact-details .detail .icon {
-  padding: 0 10px;
-  color: #707070;
-}
-@media (max-width: 992px) {
-  .contact-details .detail .icon {
-    padding: 0 5px 0 0;
-  }
-}
-.contact-details .detail .info {
-  font-size: 0.8em;
-}
-.contact-details .detail .icon,
-.contact-details .detail .info {
-  display: table-cell;
-  vertical-align: middle;
-}
-@media (max-width: 768px) {
-  .contact-details .detail {
-    position: relative;
-    float: left;
-    width: 100%;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-@media (max-width: 992px) {
-  .contact-details .detail {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding: 10px;
-  }
-  .contact-details .detail .icon,
-  .contact-details .detail .info {
-    display: inline-block;
-  }
-}
-@media (max-width: 992px) and (min-width: 768px) {
-  .contact-details .detail {
-    float: left;
-    width: 25%;
-  }
-}
-.social-links {
-  line-height: 2.5;
-}
-.social-link {
-  margin-left: 5px;
-  min-width: 35px;
-  display: inline-block;
-}
-.social-link:first-child {
-  margin-left: 0;
-}
-.social-link:hover {
-  text-decoration: none;
-}
-.link-github {
-  color: #454545;
-}
-.link-github:hover,
-.link-github:focus {
-  text-decoration: none;
-  color: #2b2b2b;
-}
-.link-twitter {
-  color: #33ccff;
-}
-.link-twitter:hover,
-.link-twitter:focus {
-  text-decoration: none;
-  color: #00bfff;
-}
-.link-blog {
-  color: #f36f24;
-}
-.link-blog:hover,
-.link-blog:focus {
-  text-decoration: none;
-  color: #d8560c;
-}
-.link-linkedin {
-  color: #007bb6;
-}
-.link-linkedin:hover,
-.link-linkedin:focus {
-  text-decoration: none;
-  color: #005983;
-}
-.link-skype {
-  color: #12a5f4;
-}
-.link-skype:hover,
-.link-skype:focus {
-  text-decoration: none;
-  color: #0986ca;
-}
-.link-instagram {
-  color: #3f729b;
-}
-.link-instagram:hover,
-.link-instagram:focus {
-  text-decoration: none;
-  color: #305777;
-}
-.link-stackoverflow {
-  color: #8e8e92;
-}
-.link-stackoverflow:hover,
-.link-stackoverflow:focus {
-  text-decoration: none;
-  color: #747479;
-}
-.link-stackexchange {
-  color: #62b0df;
-}
-.link-stackexchange:hover,
-.link-stackexchange:focus {
-  text-decoration: none;
-  color: #389bd6;
-}
-.link-lastfm {
-  color: #d12127;
-}
-.link-lastfm:hover,
-.link-lastfm:focus {
-  text-decoration: none;
-  color: #a51a1f;
-}
-.link-soundcloud {
-  color: #e8822d;
-}
-.link-soundcloud:hover,
-.link-soundcloud:focus {
-  text-decoration: none;
-  color: #cc6916;
-}
-.link-googleplus {
-  color: #dd4b39;
-}
-.link-googleplus:hover,
-.link-googleplus:focus {
-  text-decoration: none;
-  color: #c23321;
-}
-.link-youtube {
-  color: #dd4b39;
-}
-.link-youtube:hover,
-.link-youtube:focus {
-  text-decoration: none;
-  color: #c23321;
-}
-.link-pinterest {
-  color: #bd091f;
-}
-.link-pinterest:hover,
-.link-pinterest:focus {
-  text-decoration: none;
-  color: #8c0717;
-}
-.link-gratipay {
-  color: #663300;
-}
-.link-gratipay:hover,
-.link-gratipay:focus {
-  text-decoration: none;
-  color: #331a00;
-}
-.link-vimeo {
-  color: #17b3e8;
-}
-.link-vimeo:hover,
-.link-vimeo:focus {
-  text-decoration: none;
-  color: #128fba;
-}
-.link-behance {
-  color: #2c98cf;
-}
-.link-behance:hover,
-.link-behance:focus {
-  text-decoration: none;
-  color: #2379a5;
-}
-.link-codepen {
-  color: #1c1c1c;
-}
-.link-codepen:hover,
-.link-codepen:focus {
-  text-decoration: none;
-  color: #020202;
-}
-.link-foursquare {
-  color: #fa4778;
-}
-.link-foursquare:hover,
-.link-foursquare:focus {
-  text-decoration: none;
-  color: #f91554;
-}
-.link-reddit {
-  color: #545454;
-}
-.link-reddit:hover,
-.link-reddit:focus {
-  text-decoration: none;
-  color: #3b3b3b;
-}
-.link-spotify {
-  color: #acd200;
-}
-.link-spotify:hover,
-.link-spotify:focus {
-  text-decoration: none;
-  color: #829f00;
-}
-.link-tumblr {
-  color: #2d4661;
-}
-.link-tumblr:hover,
-.link-tumblr:focus {
-  text-decoration: none;
-  color: #1d2d3e;
-}
-.link-dribbble {
-  color: #ce366f;
-}
-.link-dribbble:hover,
-.link-dribbble:focus {
-  text-decoration: none;
-  color: #a82959;
-}
-.link-facebook {
-  color: #4b6daa;
-}
-.link-facebook:hover,
-.link-facebook:focus {
-  text-decoration: none;
-  color: #3b5687;
-}
-.link-angellist {
-  color: #000000;
-}
-.link-angellist:hover,
-.link-angellist:focus {
-  text-decoration: none;
-  color: #000000;
-}
-.link-bitbucket {
-  color: #205081;
-}
-.link-bitbucket:hover,
-.link-bitbucket:focus {
-  text-decoration: none;
-  color: #163758;
-}
-.card-skills {
-  position: relative;
-}
-.skill-level {
-  border-radius: 3px;
-  position: absolute;
-  top: 10px;
-  bottom: 10px;
-  left: 0;
-  width: 10px;
-  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
-}
-.skill-level .skill-progress {
-  position: absolute;
-  border-radius: 3px;
-  bottom: 0;
-  width: 100%;
-  -webkit-transition: height 1s ease;
-}
-.skill-level .skill-progress.beginner {
-  height: 50%;
-  background: #e74c3c;
-}
-.skill-level .skill-progress.intermediate {
-  height: 70%;
-  background: #f1c40f;
-}
-.skill-level .skill-progress.advanced {
-  height: 80%;
-  background: #428bca;
-}
-.skill-level .skill-progress.master {
-  height: 95%;
-  background: #5cb85c;
-}
-.skill-info {
-  margin-left: 10px;
-}
-@media (max-width: 480px) {
-  .skill-info {
-    margin-left: 20px;
-  }
-}
-@media (max-width: 768px) {
-  .quote {
-    font-size: inherit;
-  }
-}
-@media print {
-  a[href]:after {
-    content: none !important;
-  }
-  .profile-card {
-    text-align: center;
-  }
-  .profile-pic {
-    display: inline-block;
-    vertical-align: middle;
-  }
-  .profile-pic img {
-    border-radius: 0;
-  }
-  .name-and-profession {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 15px;
-  }
-  .contact-details .detail {
-    position: relative;
-    float: left;
-    width: 25%;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding: 0;
-  }
-  .floating-nav,
-  .floating-nav-trigger {
-    display: none;
-  }
-  .pagebreak {
-    page-break-before: always;
-  }
-}
-
+    
+    .floating-nav-trigger {
+        width: 50px;
+        height: 50px;
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+        -webkit-transition: background-color 0.5s ease;
+        -o-transition: background-color 0.5s ease;
+        transition: background-color 0.5s ease;
+        display: block;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 10px;
+        background-color: white;
+        font-size: 1.5em;
+        color: #357ebd;
+        z-index: 100;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+    
+    .floating-nav-trigger .close-icon {
+        display: none;
+    }
+    
+    .floating-nav-trigger:hover {
+        color: #1f496e;
+        background-color: #e6e6e6;
+        text-decoration: none;
+    }
+    
+    .floating-nav-trigger.is-open {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    
+    .floating-nav-trigger.is-open .close-icon {
+        display: inherit;
+    }
+    
+    .floating-nav-trigger.is-open .fa-bars {
+        display: none;
+    }
+    
+    .floating-nav-trigger.is-open:hover {
+        background-color: white;
+    }
+    
+    .floating-nav {
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+        -webkit-transform-origin: 100% 100%;
+        -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        -webkit-transition: transform 0.3s, visibility 0s 0.3s;
+        -o-transition: transform 0.3s, visibility 0s 0.3s;
+        transition: transform 0.3s, visibility 0s 0.3s;
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+        position: fixed;
+        z-index: 50;
+        right: 10px;
+        bottom: 10px;
+        background-color: white;
+        width: 90%;
+        max-width: 400px;
+        visibility: hidden;
+        overflow: hidden;
+    }
+    
+    .floating-nav ul {
+        font-size: 1.2em;
+        margin: 0;
+    }
+    
+    .floating-nav ul li {
+        border-bottom: 1px solid #eff2f6;
+    }
+    
+    .floating-nav ul li a {
+        padding: 20px;
+        text-decoration: none;
+        color: #357ebd;
+        display: block;
+    }
+    
+    .floating-nav ul li a:hover {
+        color: #1f496e;
+    }
+    
+    .floating-nav ul li i.fa {
+        margin-right: 10px;
+    }
+    
+    .floating-nav ul li:last-child {
+        border-bottom: 0;
+    }
+    
+    .floating-nav.is-visible {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: transform 0.3s, visibility 0s 0s;
+        -o-transition: transform 0.3s, visibility 0s 0s;
+        transition: transform 0.3s, visibility 0s 0s;
+        visibility: visible;
+    }
+    
+    @media (max-width: 992px) {
+        .profile-card-wrapper {
+            position: relative;
+        }
+    }
+    
+    .profile-pic {
+        padding: 20px 0;
+    }
+    
+    @media (max-width: 992px) {
+        .profile-pic {
+            padding: 10px 0;
+        }
+    }
+    
+    .profile-pic img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    @media (max-width: 992px) {
+        .name {
+            margin-top: 10px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .contact-details {
+            text-align: center;
+        }
+    }
+    
+    .contact-details .detail {
+        display: table;
+        padding: 10px 0;
+    }
+    
+    .contact-details .detail .icon {
+        padding: 0 10px;
+        color: #707070;
+    }
+    
+    @media (max-width: 992px) {
+        .contact-details .detail .icon {
+            padding: 0 5px 0 0;
+        }
+    }
+    
+    .contact-details .detail .info {
+        font-size: 0.8em;
+    }
+    
+    .contact-details .detail .icon,
+    .contact-details .detail .info {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    
+    @media (max-width: 768px) {
+        .contact-details .detail {
+            position: relative;
+            float: left;
+            width: 100%;
+            min-height: 1px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    
+    @media (max-width: 992px) {
+        .contact-details .detail {
+            position: relative;
+            min-height: 1px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding: 10px;
+        }
+        .contact-details .detail .icon,
+        .contact-details .detail .info {
+            display: inline-block;
+        }
+    }
+    
+    @media (max-width: 992px) and (min-width: 768px) {
+        .contact-details .detail {
+            float: left;
+            width: 25%;
+        }
+    }
+    
+    .social-links {
+        line-height: 2.5;
+    }
+    
+    .social-link {
+        margin-left: 5px;
+        min-width: 35px;
+        display: inline-block;
+    }
+    
+    .social-link:first-child {
+        margin-left: 0;
+    }
+    
+    .social-link:hover {
+        text-decoration: none;
+    }
+    
+    .link-github {
+        color: #454545;
+    }
+    
+    .link-github:hover,
+    .link-github:focus {
+        text-decoration: none;
+        color: #2b2b2b;
+    }
+    
+    .link-twitter {
+        color: #33ccff;
+    }
+    
+    .link-twitter:hover,
+    .link-twitter:focus {
+        text-decoration: none;
+        color: #00bfff;
+    }
+    
+    .link-blog {
+        color: #f36f24;
+    }
+    
+    .link-blog:hover,
+    .link-blog:focus {
+        text-decoration: none;
+        color: #d8560c;
+    }
+    
+    .link-linkedin {
+        color: #007bb6;
+    }
+    
+    .link-linkedin:hover,
+    .link-linkedin:focus {
+        text-decoration: none;
+        color: #005983;
+    }
+    
+    .link-skype {
+        color: #12a5f4;
+    }
+    
+    .link-skype:hover,
+    .link-skype:focus {
+        text-decoration: none;
+        color: #0986ca;
+    }
+    
+    .link-instagram {
+        color: #3f729b;
+    }
+    
+    .link-instagram:hover,
+    .link-instagram:focus {
+        text-decoration: none;
+        color: #305777;
+    }
+    
+    .link-stackoverflow {
+        color: #8e8e92;
+    }
+    
+    .link-stackoverflow:hover,
+    .link-stackoverflow:focus {
+        text-decoration: none;
+        color: #747479;
+    }
+    
+    .link-stackexchange {
+        color: #62b0df;
+    }
+    
+    .link-stackexchange:hover,
+    .link-stackexchange:focus {
+        text-decoration: none;
+        color: #389bd6;
+    }
+    
+    .link-lastfm {
+        color: #d12127;
+    }
+    
+    .link-lastfm:hover,
+    .link-lastfm:focus {
+        text-decoration: none;
+        color: #a51a1f;
+    }
+    
+    .link-soundcloud {
+        color: #e8822d;
+    }
+    
+    .link-soundcloud:hover,
+    .link-soundcloud:focus {
+        text-decoration: none;
+        color: #cc6916;
+    }
+    
+    .link-googleplus {
+        color: #dd4b39;
+    }
+    
+    .link-googleplus:hover,
+    .link-googleplus:focus {
+        text-decoration: none;
+        color: #c23321;
+    }
+    
+    .link-youtube {
+        color: #dd4b39;
+    }
+    
+    .link-youtube:hover,
+    .link-youtube:focus {
+        text-decoration: none;
+        color: #c23321;
+    }
+    
+    .link-pinterest {
+        color: #bd091f;
+    }
+    
+    .link-pinterest:hover,
+    .link-pinterest:focus {
+        text-decoration: none;
+        color: #8c0717;
+    }
+    
+    .link-gratipay {
+        color: #663300;
+    }
+    
+    .link-gratipay:hover,
+    .link-gratipay:focus {
+        text-decoration: none;
+        color: #331a00;
+    }
+    
+    .link-vimeo {
+        color: #17b3e8;
+    }
+    
+    .link-vimeo:hover,
+    .link-vimeo:focus {
+        text-decoration: none;
+        color: #128fba;
+    }
+    
+    .link-behance {
+        color: #2c98cf;
+    }
+    
+    .link-behance:hover,
+    .link-behance:focus {
+        text-decoration: none;
+        color: #2379a5;
+    }
+    
+    .link-codepen {
+        color: #1c1c1c;
+    }
+    
+    .link-codepen:hover,
+    .link-codepen:focus {
+        text-decoration: none;
+        color: #020202;
+    }
+    
+    .link-foursquare {
+        color: #fa4778;
+    }
+    
+    .link-foursquare:hover,
+    .link-foursquare:focus {
+        text-decoration: none;
+        color: #f91554;
+    }
+    
+    .link-reddit {
+        color: #545454;
+    }
+    
+    .link-reddit:hover,
+    .link-reddit:focus {
+        text-decoration: none;
+        color: #3b3b3b;
+    }
+    
+    .link-spotify {
+        color: #acd200;
+    }
+    
+    .link-spotify:hover,
+    .link-spotify:focus {
+        text-decoration: none;
+        color: #829f00;
+    }
+    
+    .link-tumblr {
+        color: #2d4661;
+    }
+    
+    .link-tumblr:hover,
+    .link-tumblr:focus {
+        text-decoration: none;
+        color: #1d2d3e;
+    }
+    
+    .link-dribbble {
+        color: #ce366f;
+    }
+    
+    .link-dribbble:hover,
+    .link-dribbble:focus {
+        text-decoration: none;
+        color: #a82959;
+    }
+    
+    .link-facebook {
+        color: #4b6daa;
+    }
+    
+    .link-facebook:hover,
+    .link-facebook:focus {
+        text-decoration: none;
+        color: #3b5687;
+    }
+    
+    .link-angellist {
+        color: #000000;
+    }
+    
+    .link-angellist:hover,
+    .link-angellist:focus {
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    .link-bitbucket {
+        color: #205081;
+    }
+    
+    .link-bitbucket:hover,
+    .link-bitbucket:focus {
+        text-decoration: none;
+        color: #163758;
+    }
+    
+    .card-skills {
+        position: relative;
+    }
+    
+    .skill-level {
+        border-radius: 3px;
+        position: absolute;
+        top: 10px;
+        bottom: 10px;
+        left: 0;
+        width: 10px;
+        box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
+    }
+    
+    .skill-level .skill-progress {
+        position: absolute;
+        border-radius: 3px;
+        bottom: 0;
+        width: 100%;
+        -webkit-transition: height 1s ease;
+    }
+    
+    .skill-level .skill-progress.beginner {
+        height: 50%;
+        background: #e74c3c;
+    }
+    
+    .skill-level .skill-progress.intermediate {
+        height: 70%;
+        background: #f1c40f;
+    }
+    
+    .skill-level .skill-progress.advanced {
+        height: 80%;
+        background: #428bca;
+    }
+    
+    .skill-level .skill-progress.master {
+        height: 95%;
+        background: #5cb85c;
+    }
+    
+    .skill-info {
+        margin-left: 10px;
+    }
+    
+    @media (max-width: 480px) {
+        .skill-info {
+            margin-left: 20px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .quote {
+            font-size: inherit;
+        }
+    }
+    
+    @media print {
+        a[href]:after {
+            content: none !important;
+        }
+        .profile-card {
+            text-align: center;
+        }
+        .profile-pic {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .profile-pic img {
+            border-radius: 0;
+        }
+        .name-and-profession {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 15px;
+        }
+        .contact-details .detail {
+            position: relative;
+            float: left;
+            width: 25%;
+            min-height: 1px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding: 0;
+        }
+        .floating-nav,
+        .floating-nav-trigger {
+            display: none;
+        }
+        .pagebreak {
+            page-break-before: always;
+        }
+    }
     </style>
-  </head>
+</head>
 
-  <body itemscope itemtype="http://schema.org/Person">
+<body itemscope itemtype="http://schema.org/Person">
     <script>
-      window.onload = function () {
+    window.onload = function() {
         var toggleFloatingMenu = function() {
-          $( '.js-floating-nav' ).toggleClass( 'is-visible' );
-          $( '.js-floating-nav-trigger' ).toggleClass( 'is-open' );
+            $('.js-floating-nav').toggleClass('is-visible');
+            $('.js-floating-nav-trigger').toggleClass('is-open');
         };
 
-        $( ".background-card" ).css( "min-height", window.screen.availHeight + "px" );
-        $( "[rel=tooltip]" ).tooltip();
-        $( '.js-floating-nav-trigger' ).on( 'click', function(e) {
-          e.preventDefault();
-          toggleFloatingMenu();
+        $(".background-card").css("min-height", window.screen.availHeight + "px");
+        $("[rel=tooltip]").tooltip();
+        $('.js-floating-nav-trigger').on('click', function(e) {
+            e.preventDefault();
+            toggleFloatingMenu();
         });
-        $( '.js-floating-nav a' ).on( 'click', toggleFloatingMenu );
-      }
+        $('.js-floating-nav a').on('click', toggleFloatingMenu);
+    }
     </script>
     <div class="container-fluid">
-      <div class="row main clearfix">
-        <a href="#" class="js-floating-nav-trigger floating-nav-trigger">
-          <i class="fa fa-bars"></i>
-          <span class="close-icon">&times;</span>
-        </a>
-        <nav class="floating-nav js-floating-nav">
-          <ul class="list-unstyled">
-            <li>
-              <a href="#about">
-                <i class="fa fa-user"></i>
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#work-experience">
-                <i class="fa fa-building"></i>
-                Work Experience
-              </a>
-            </li>
-            <li>
-              <a href="#skills">
-                <i class="fa fa-code"></i>
-                Skills
-              </a>
-            </li>
-            <li>
-              <a href="#education">
-                <i class="fa fa-mortar-board"></i>
-                Education
-              </a>
-            </li>
-              <li>
-                <a href="#awards">
-                  <i class="fa fa-trophy"></i>
-                  Awards
-                </a>
-              </li>
-              <li>
-                <a href="#references">
-                  <i class="fa fa-thumbs-up"></i>
-                  References
-                </a>
-              </li>
-          </ul>
-        </nav>
-
-        <section class="col-md-3 card-wrapper profile-card-wrapper affix">
-          <div class="card profile-card">
-              <span class="profile-pic-container">
+        <div class="row main clearfix">
+            <a href="#" class="js-floating-nav-trigger floating-nav-trigger">
+                <i class="fa fa-bars"></i>
+                <span class="close-icon">&times;</span>
+            </a>
+            <nav class="floating-nav js-floating-nav">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#about">
+                            <i class="fa fa-user"></i> About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#work-experience">
+                            <i class="fa fa-building"></i> Work Experience
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects">
+                            <i class="fa fa-edit"></i> Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#skills">
+                            <i class="fa fa-code"></i> Skills
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#education">
+                            <i class="fa fa-mortar-board"></i> Education
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#awards">
+                            <i class="fa fa-trophy"></i> Awards
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#references">
+                            <i class="fa fa-thumbs-up"></i> References
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="col-md-3 card-wrapper profile-card-wrapper affix">
+                <div class="card profile-card">
+                    <span class="profile-pic-container">
                 <div class="profile-pic">
                   <img class="media-object img-circle center-block"  data-src="holder.js/100x100"
                     alt="Seena Rowhani" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAI7AAAAJDE5ZDY4YzIwLWYyY2QtNDI0OS04YzBiLWYwMWIyYWM5MjJmMQ.jpg" itemprop="image">
@@ -743,107 +871,179 @@ body {
                   <h5 class="text-muted text-center" itemprop="jobTitle">Software Designer</h5>
                 </div>
               </span>
-              <hr>
-
-              <div class="contact-details clearfix">
-
-                  <div class="detail">
-                    <span class="icon">
+                    <hr>
+                    <div class="contact-details clearfix">
+                        <div class="detail">
+                            <span class="icon">
                       <i class="fa fa-lg fa-location-arrow"></i>
                     </span>
-                    <span class="info">
+                            <span class="info">
                       Ottawa, Ontario, CA
                     </span>
-                  </div>
-
-
-                  <div class="detail">
-                    <span class="icon">
+                        </div>
+                        <div class="detail">
+                            <span class="icon">
                       <i class="fa fa-lg fa-envelope"></i>
                     </span>
-
-                    <span class="info">
-                      <a href="/cdn-cgi/l/email-protection#dba8bebeb5baa9b4acb3bab5b2e2ee9bbcb6bab2b7f5b8b4b6" class="link-disguise" itemprop="email"><span class="__cf_email__" data-cfemail="5e2d3b3b303f2c3129363f3037676b1e39333f3732703d3133">[email&#160;protected]</span><script cf-hash='f9e31' type="text/javascript">
-/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("cf-hash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}}}catch(u){}}();/* ]]> */</script></a>
-                    </span>
-                  </div>
-
-                  <div class="detail">
-                    <span class="icon">
+                            <span class="info">
+                      <a href="/cdn-cgi/l/email-protection#dba8bebeb5baa9b4acb3bab5b2e2ee9bbcb6bab2b7f5b8b4b6" class="link-disguise" itemprop="email"><span class="__cf_email__" data-cfemail="5e2d3b3b303f2c3129363f3037676b1e39333f3732703d3133">[email&#160;protected]</span>
+                            <script cf-hash='f9e31' type="text/javascript">
+                            /* <![CDATA[ */ ! function() {
+                                try {
+                                    var t = "currentScript" in document ? document.currentScript : function() {
+                                        for (var t = document.getElementsByTagName("script"), e = t.length; e--;)
+                                            if (t[e].getAttribute("cf-hash")) return t[e]
+                                    }();
+                                    if (t && t.previousSibling) {
+                                        var e, r, n, i, c = t.previousSibling,
+                                            a = c.getAttribute("data-cfemail");
+                                        if (a) {
+                                            for (e = "", r = parseInt(a.substr(0, 2), 16), n = 2; a.length - n; n += 2) i = parseInt(a.substr(n, 2), 16) ^ r, e += String.fromCharCode(i);
+                                            e = document.createTextNode(e), c.parentNode.replaceChild(e, c)
+                                        }
+                                    }
+                                } catch (u) {}
+                            }(); /* ]]> */
+                            </script>
+                            </a>
+                            </span>
+                        </div>
+                        <div class="detail">
+                            <span class="icon">
                       <i class="fa fa-lg fa-link"></i>
                     </span>
-
-                    <span class="info">
+                            <span class="info">
                       <a href="http://github.com/srowhani" target="_blank">http://github.com/srowhani</a>
                     </span>
-                  </div>
-
-                  <div class="detail">
-                    <span class="icon" title="Languages I speak">
+                        </div>
+                        <div class="detail">
+                            <span class="icon" title="Languages I speak">
                       <i class="fa fa-lg fa-language"></i>
                     </span>
-
-                    <span class="info">
+                            <span class="info">
                       English, Farsi
                     </span>
-                  </div>
-              </div>
-
-              <hr>
-
-              <div class="social-links text-center">
-                  <a class="fa fa-linkedin fa-2x social-link link-linkedin"
-                       href="https://ca.linkedin.com/in/srowhani" target="_blank"></a>
-                  <a class="fa fa-github fa-2x social-link link-github"
-                       href="//github.com/srowhani" target="_blank"></a>
-                  <a class="fa fa-bitbucket fa-2x social-link link-bitbucket" href="//bitbucket.org/srowhani" target="_blank"></a>
-                  <a class="fa fa-facebook-square fa-2x social-link link-facebook" href="//facebook.com/seena.rowhani" target="_blank"></a>
-                  <a class="fa fa-instagram fa-2x social-link link-instagram" href="//instagram.com/seenarowhani" target="_blank"></a>
-              </div>
-          </div>
-        </section>
-
-        <section class="col-md-9 card-wrapper pull-right">
-          <div class="card background-card">
-            <h4 class="text-uppercase text-bolder">Background</h4>
-            <hr>
-
-            <div class="background-details">
-              <div class="detail" id="about">
-                <div class="icon">
-                  <i class="fa fa-lg fa-user"></i>
-                  <span class="mobile-title">About</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="social-links text-center">
+                        <a class="fa fa-linkedin fa-2x social-link link-linkedin" href="https://ca.linkedin.com/in/srowhani" target="_blank"></a>
+                        <a class="fa fa-github fa-2x social-link link-github" href="//github.com/srowhani" target="_blank"></a>
+                        <a class="fa fa-bitbucket fa-2x social-link link-bitbucket" href="//bitbucket.org/srowhani" target="_blank"></a>
+                        <a class="fa fa-facebook-square fa-2x social-link link-facebook" href="//facebook.com/seena.rowhani" target="_blank"></a>
+                        <a class="fa fa-instagram fa-2x social-link link-instagram" href="//instagram.com/seenarowhani" target="_blank"></a>
+                    </div>
                 </div>
-                <div class="info">
-                  <h4 class="title text-uppercase">
+            </section>
+            <section class="col-md-9 card-wrapper pull-right">
+                <div class="card background-card">
+                    <h4 class="text-uppercase text-bolder">Background</h4>
+                    <hr>
+                    <div class="background-details">
+
+
+                        <div class="detail" id="about">
+                            <div class="icon">
+                                <i class="fa fa-lg fa-user"></i>
+                                <span class="mobile-title">About</span>
+                            </div>
+                            <div class="info">
+                                <h4 class="title text-uppercase">
                     About
                   </h4>
+                                <div class="content" itemprop="description">
+                                    A student of Carleton University, majoring in the field of Software Engineering. My goal is to pursue my passion in software and applications development, and apply the education that&#x27;s been received in the real world. The beginning of this pursuit has taken the shape of the application design, peer mentoring services, and the university studies.
+                                </div>
+                            </div>
+                        </div>
 
-                  <div class="content" itemprop="description">
-                    A student of Carleton University, majoring in the field of Software Engineering. My goal is to pursue my passion in software and applications development, and apply the education that&#x27;s been received in the real world. The beginning of this pursuit has taken the shape of the application design, peer mentoring services, and the university studies.
-                  </div>
-                </div>
-              </div>
+                        <div class='detail' id='projects'>
+                        	<div class='icon'>
+                        		<i class='fa fa-lg fa-edit'></i>
+                        		<span class='mobile-title'>Projects</span>
+                        	</div>
+                        	<div class='info'>
+                        		<h4 class='title text-uppercase'>Projects</h4>
+                        		<div class='content' itemprop='description'>
+                        			
+                        			<a href='https://github.com/srowhani/AudioPhile' target="_blank"><h3>AudioPhile</h3></a>
+                        			<div>
+	                        			A quick application I made that makes use of the HTML5 audio element, and API
+										to load sound files and play them back, as well as visualizing them.
 
-              <div class="detail" id="work-experience">
-                <div class="icon">
-                  <i class="fa fa-lg fa-building"></i>
-                  <span class="mobile-title">Work Experience</span>
-                </div>
-                <div class="info">
-                  <h4 class="title text-uppercase">
+										<strong>Side Notes</strong><br/>
+										Using Canvas, I draw the frequency data which is represented as an UintArray by iterating through it
+										and drawing each of the array values as rectangles.
+
+										As for the beat matching, if:<br/><br/>
+										<code>[].slice.call(_player.getFrequency(), 0, 4).reduce(function(x,y){return x+y})</code>
+										<br/><br/>
+										surpasses 720 (the limit for each frequency is 200) I set the fillstyle of my canvas context to be
+										a blue gradient as opposed to the default red one.
+
+										<br/>
+										Also, I capped the limit of <code>requestAnimationFrame</code> by doing the following:<br/><br/>
+
+										<code>window.setTimeout(
+										  function(){
+										    requestAnimationFrame(update);
+										  }, 1000/30)
+										</code><br/><br/>
+
+										This ensures that the frames per second won't surpass 30.<br/><br/>
+
+										<strong>Usage</strong><br/>
+										It's pretty simple, you drop music into the dashed div box, and it should load them.
+										Once it has, clicking the div will grab the src from the element's dataset, and begin playback<br/><br/>
+
+										<strong>Demo</strong><br/>
+										Can be found <a href='http://srowhani.github.io/AudioPhile' target='_blank'>here</a>
+
+										<br/><br/><strong>Learning sources</strong><br/>
+										<ul>
+										  <li>http://ianreah.com/2013/02/28/Real-time-analysis-of-streaming-audio-data-with-Web-Audio-API.html</li>
+										  <li>https://webaudio.github.io/web-audio-api/</li>
+										</ul>
+									</div>
+                        			<a href='https://github.com/srowhani/meteor-reddit-scrape' target="_blank"><h3>meteor-reddit-scrape</h3></a>
+                        			<div>
+                        				A MeteorJS practice application that scrapes and displays reddit.
+                        			</div>
+                        			<a href='https://github.com/srowhani/meteor-chat' target="_blank"><h3>meteor-chat</h3></a>
+                        			<div>
+                        				MeteorChat is an independent project I did during university that showcases more functionality of the Meteor Framework.
+                        				This app works on the following premise. There exists two databases.
+                        				<br/>
+										- Users<br/>
+										- Conversations<br/>
+										<br/>
+										Conversations include two unique user ID's. The sender, and the reciever. Using MongoDB's quick ability to
+										grab a cursor of matching elements of a query, if a client is either a sender, or reciever they will have 
+										access to their part of the database.
+                        			</div>
+
+                        		</div>
+                        	</div>
+                        </div>
+
+                        <div class="detail" id="work-experience">
+                            <div class="icon">
+                                <i class="fa fa-lg fa-building"></i>
+                                <span class="mobile-title">Work Experience</span>
+                            </div>
+                            <div class="info">
+                                <h4 class="title text-uppercase">
                     Work Experience
                   </h4>
-
-                  <ul class="list-unstyled">
-                      <li class="card card-nested clearfix">
-                        <div class="content">
-                          <p class="clear-margin relative">
-                            <strong>Software Designer</strong>,&nbsp;
-                              <a href="https://www.alcatel-lucent.com/"  target="_blank">Alcatel-Lucent</a>
-                          </p>
-                          <p class="text-muted">
-                            <small>
+                                <ul class="list-unstyled">
+                                    <li class="card card-nested clearfix">
+                                        <div class="content">
+                                            <p class="clear-margin relative">
+                                                <strong>Software Designer</strong>,&nbsp;
+                                                <a href="https://www.alcatel-lucent.com/" target="_blank">Alcatel-Lucent</a>
+                                            </p>
+                                            <p class="text-muted">
+                                                <small>
                               <span class="space-right">
                                 May, 2015 -
                                   Sep, 2015
@@ -854,24 +1054,24 @@ body {
                                   4 months
                                 </span>
                             </small>
-                          </p>
-                          <p>Developed along side of extremely talented designers and testers, refining and designing popular applications that would be used both internally and externally.</p>
-                            <ul>
-                                <li> Developed features for Web Applications using popular industry tools </li>
-                                <li> Experience with popular build, automation, and development interfaces </li>
-                                <li> Manipulation of both Javascript and Java code base, for front and back-end development </li>
-                                <li> Created and maintained build tools used by other developers </li>
-                            </ul>
-                        </div>
-                      </li>
-                      <li class="card card-nested clearfix">
-                        <div class="content">
-                          <p class="clear-margin relative">
-                            <strong>Web Application Developer</strong>,&nbsp;
-                              <a href="http://www.tekworthy.com/"  target="_blank">TekWorthy</a>
-                          </p>
-                          <p class="text-muted">
-                            <small>
+                                            </p>
+                                            <p>Developed along side of extremely talented designers and testers, refining and designing popular applications that would be used both internally and externally.</p>
+                                            <ul>
+                                                <li> Developed features for Web Applications using popular industry tools </li>
+                                                <li> Experience with popular build, automation, and development interfaces </li>
+                                                <li> Manipulation of both Javascript and Java code base, for front and back-end development </li>
+                                                <li> Created and maintained build tools used by other developers </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="card card-nested clearfix">
+                                        <div class="content">
+                                            <p class="clear-margin relative">
+                                                <strong>Web Application Developer</strong>,&nbsp;
+                                                <a href="http://www.tekworthy.com/" target="_blank">TekWorthy</a>
+                                            </p>
+                                            <p class="text-muted">
+                                                <small>
                               <span class="space-right">
                                 Nov, 2014 -
                                   Feb, 2015
@@ -882,23 +1082,23 @@ body {
                                   2 months
                                 </span>
                             </small>
-                          </p>
-                          <p>Developed a wide array of web applications for clients to meet their needs, in a given time frame.</p>
-                            <ul>
-                                <li> MeteorJS </li>
-                                <li> Socket Client-Server Development </li>
-                                <li> MongoDB - No SQL database </li>
-                            </ul>
-                        </div>
-                      </li>
-                      <li class="card card-nested clearfix">
-                        <div class="content">
-                          <p class="clear-margin relative">
-                            <strong>Teaching Assistant</strong>,&nbsp;
-                              <a href="http://carleton.ca"  target="_blank">Carleton University</a>
-                          </p>
-                          <p class="text-muted">
-                            <small>
+                                            </p>
+                                            <p>Developed a wide array of web applications for clients to meet their needs, in a given time frame.</p>
+                                            <ul>
+                                                <li> MeteorJS </li>
+                                                <li> Socket Client-Server Development </li>
+                                                <li> MongoDB - No SQL database </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="card card-nested clearfix">
+                                        <div class="content">
+                                            <p class="clear-margin relative">
+                                                <strong>Teaching Assistant</strong>,&nbsp;
+                                                <a href="http://carleton.ca" target="_blank">Carleton University</a>
+                                            </p>
+                                            <p class="text-muted">
+                                                <small>
                               <span class="space-right">
                                 Sep, 2014 -
                                   May, 2015
@@ -909,24 +1109,24 @@ body {
                                   8 months
                                 </span>
                             </small>
-                          </p>
-                          <p>Taught many popular programming courses to mainly first year students, aiding them in the process of learning.</p>
-                            <ul>
-                                <li> Facilitate weekly office hours, in order to ensure that students are fully understanding the course material, and to provide extra attention to those that need it. </li>
-                                <li> Conduct tutorial sessions, where students are able to collaboratively complete practice assignments and express their concerns or troubles and work towards a resolution </li>
-                                <li> Revise and evaluate the students’ tests and assignments so that they can benefit from constructive feedback, and ultimately improve their academic performance. </li>
-                                <li> Collaborated with colleagues and professors to ensure equality between students of different learning stages, such that everyone can be accommodated. </li>
-                            </ul>
-                        </div>
-                      </li>
-                      <li class="card card-nested clearfix">
-                        <div class="content">
-                          <p class="clear-margin relative">
-                            <strong>Web Developer</strong>,&nbsp;
-                              <a href="http://vayyoo.com/www/main/"  target="_blank">Vayyoo</a>
-                          </p>
-                          <p class="text-muted">
-                            <small>
+                                            </p>
+                                            <p>Taught many popular programming courses to mainly first year students, aiding them in the process of learning.</p>
+                                            <ul>
+                                                <li> Facilitate weekly office hours, in order to ensure that students are fully understanding the course material, and to provide extra attention to those that need it. </li>
+                                                <li> Conduct tutorial sessions, where students are able to collaboratively complete practice assignments and express their concerns or troubles and work towards a resolution </li>
+                                                <li> Revise and evaluate the students’ tests and assignments so that they can benefit from constructive feedback, and ultimately improve their academic performance. </li>
+                                                <li> Collaborated with colleagues and professors to ensure equality between students of different learning stages, such that everyone can be accommodated. </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="card card-nested clearfix">
+                                        <div class="content">
+                                            <p class="clear-margin relative">
+                                                <strong>Web Developer</strong>,&nbsp;
+                                                <a href="http://vayyoo.com/www/main/" target="_blank">Vayyoo</a>
+                                            </p>
+                                            <p class="text-muted">
+                                                <small>
                               <span class="space-right">
                                 May, 2013 -
                                   Aug, 2013
@@ -937,202 +1137,264 @@ body {
                                   2 months
                                 </span>
                             </small>
-                          </p>
-                          <p></p>
-                            <ul>
-                                <li> Developed a ‘Getting Started’ application using Javascript, CSS, as well as various JS templating libraries, to introduce new clients to the websites available interfaces. </li>
-                                <li> Debugged iOS, Android, and Web Applications, and created bug reports and appropriate ‘push’ or feature requests to accommodate the clients’ needs. </li>
-                                <li> Tested Java backend server for time complexity, as well as security and vulnerability. Essentially making sure that the REST API that they were using was working as intended. </li>
-                                <li> Gained insight into working well with others, time management, and collaboration. </li>
-                            </ul>
+                                            </p>
+                                            <p></p>
+                                            <ul>
+                                                <li> Developed a ‘Getting Started’ application using Javascript, CSS, as well as various JS templating libraries, to introduce new clients to the websites available interfaces. </li>
+                                                <li> Debugged iOS, Android, and Web Applications, and created bug reports and appropriate ‘push’ or feature requests to accommodate the clients’ needs. </li>
+                                                <li> Tested Java backend server for time complexity, as well as security and vulnerability. Essentially making sure that the REST API that they were using was working as intended. </li>
+                                                <li> Gained insight into working well with others, time management, and collaboration. </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                      </li>
-                  </ul>
-                </div>
-              </div>
-
-                <div class="detail" id="skills">
-                  <div class="icon">
-                    <i class="fa fa-lg fa-code"></i>
-                    <span class="mobile-title">Skills</span>
-                  </div>
-                  <div class="info">
-                    <h4 class="title text-uppercase">
+                        <div class="detail" id="skills">
+                            <div class="icon">
+                                <i class="fa fa-lg fa-code"></i>
+                                <span class="mobile-title">Skills</span>
+                            </div>
+                            <div class="info">
+                                <h4 class="title text-uppercase">
                       Skills
                     </h4>
-
-                    <div class="content">
-                      <ul class="list-unstyled">
-                          <li class="card card-nested card-skills">
-                            <div class="skill-info">
-                              <strong>Software Design</strong>
-
-                              <div class="space-top labels">
-                                  <span class="label label-keyword">HTML5</span>
-                                  <span class="label label-keyword">CSS</span>
-                                  <span class="label label-keyword">Javascript</span>
-                                  <span class="label label-keyword">Java</span>
-                                  <span class="label label-keyword">C, C++</span>
-                                  <span class="label label-keyword">Python</span>
-                                  <span class="label label-keyword">BASH, csh, zsh</span>
-                              </div>
+                                <div class="content">
+                                    <ul class="list-unstyled">
+                                        <li class="card card-nested card-skills">
+                                            <div class="skill-info">
+                                                <strong>Software Design</strong>
+                                                <div class="space-top labels">
+                                                    <span class="label label-keyword">HTML5</span>
+                                                    <span class="label label-keyword">CSS</span>
+                                                    <span class="label label-keyword">Javascript</span>
+                                                    <span class="label label-keyword">Java</span>
+                                                    <span class="label label-keyword">C, C++</span>
+                                                    <span class="label label-keyword">Python</span>
+                                                    <span class="label label-keyword">BASH, csh, zsh</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="card card-nested card-skills">
+                                            <div class="skill-info">
+                                                <strong>Automation, Building, and Testing</strong>
+                                                <div class="space-top labels">
+                                                    <span class="label label-keyword">Gradle</span>
+                                                    <span class="label label-keyword">Bower</span>
+                                                    <span class="label label-keyword">Mocha</span>
+                                                    <span class="label label-keyword">Gulp</span>
+                                                    <span class="label label-keyword">Jasmine</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                          </li>
-                          <li class="card card-nested card-skills">
-                            <div class="skill-info">
-                              <strong>Automation, Building, and Testing</strong>
-
-                              <div class="space-top labels">
-                                  <span class="label label-keyword">Gradle</span>
-                                  <span class="label label-keyword">Bower</span>
-                                  <span class="label label-keyword">Mocha</span>
-                                  <span class="label label-keyword">Gulp</span>
-                                  <span class="label label-keyword">Jasmine</span>
-                              </div>
+                        </div>
+                        <div class="detail" id="education">
+                            <div class="icon">
+                                <i class="fa fa-lg fa-mortar-board"></i>
+                                <span class="mobile-title">Education</span>
                             </div>
-                          </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-              <div class="detail" id="education">
-                <div class="icon">
-                  <i class="fa fa-lg fa-mortar-board"></i>
-                  <span class="mobile-title">Education</span>
-                </div>
-                <div class="info">
-                  <h4 class="title text-uppercase">
+                            <div class="info">
+                                <h4 class="title text-uppercase">
                     Education
                   </h4>
-
-                  <div class="content">
-                    <ul class="list-unstyled">
-                        <li class="card card-nested">
-                          <div class="content">
-                            <p class="clear-margin relative">
-
-                              <strong>Computer Science: Honours in Software Engineering, Bachelor</strong>,&nbsp;
-                              Carleton University
-                            </p>
-                            <p class="text-muted">
-                              <small>
+                                <div class="content">
+                                    <ul class="list-unstyled">
+                                        <li class="card card-nested">
+                                            <div class="content">
+                                                <p class="clear-margin relative">
+                                                    <strong>Computer Science: Honours in Software Engineering, Bachelor</strong>,&nbsp; Carleton University
+                                                </p>
+                                                <p class="text-muted">
+                                                    <small>
                                 Sep, 2013 -
                                   May, 2018
                               </small>
-                            </p>
-                            <i>10.7</i>
-                            <div class="space-top labels">
-                                <span class="label label-keyword">COMP 2404 - Software Engineering</span>
-                                <span class="label label-keyword">MATH 1007 - Elementary Calculus</span>
-                                <span class="label label-keyword">COMP 2406 - Web Applications</span>
-                                <span class="label label-keyword">COMP 1406 - Intro to CS II</span>
-                                <span class="label label-keyword">MATH 1104 - Linear Algebra</span>
-                                <span class="label label-keyword">COMP 1405 - Intro to CS I</span>
-                                <span class="label label-keyword">COMP 2804 - Discrete Structures II II</span>
-                                <span class="label label-keyword">COMP 2401 - Systems Programming</span>
-                                <span class="label label-keyword">COMP 2404 - Data Structures and Algorithms</span>
-                                <span class="label label-keyword">COMP 1805 - Discrete Structures I</span>
-                                <span class="label label-keyword">CGNS 1001 - Cognitive Science</span>
+                                                </p>
+                                                <i>10.7</i>
+                                                <div class="space-top labels">
+                                                    <span class="label label-keyword">COMP 2404 - Software Engineering</span>
+                                                    <span class="label label-keyword">MATH 1007 - Elementary Calculus</span>
+                                                    <span class="label label-keyword">COMP 2406 - Web Applications</span>
+                                                    <span class="label label-keyword">COMP 1406 - Intro to CS II</span>
+                                                    <span class="label label-keyword">MATH 1104 - Linear Algebra</span>
+                                                    <span class="label label-keyword">COMP 1405 - Intro to CS I</span>
+                                                    <span class="label label-keyword">COMP 2804 - Discrete Structures II II</span>
+                                                    <span class="label label-keyword">COMP 2401 - Systems Programming</span>
+                                                    <span class="label label-keyword">COMP 2404 - Data Structures and Algorithms</span>
+                                                    <span class="label label-keyword">COMP 1805 - Discrete Structures I</span>
+                                                    <span class="label label-keyword">CGNS 1001 - Cognitive Science</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                          </div>
-                        </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-                <div class="detail" id="awards">
-                  <div class="icon">
-                    <i class="fa fa-lg fa-trophy"></i>
-                    <span class="mobile-title">Awards</span>
-                  </div>
-                  <div class="info">
-                    <h4 class="title text-uppercase">
+                        </div>
+                        <div class="detail" id="awards">
+                            <div class="icon">
+                                <i class="fa fa-lg fa-trophy"></i>
+                                <span class="mobile-title">Awards</span>
+                            </div>
+                            <div class="info">
+                                <h4 class="title text-uppercase">
                       Awards
                     </h4>
-
-                    <div class="content">
-                      <ul class="list-unstyled">
-                          <li class="card card-nested">
-                            <div class="content">
-                              <p class="clear-margin" itemprop="award">
-                                <strong>Academic Achievement</strong>,&nbsp;
-                                Carleton University
-                              </p>
-                              <p class="text-muted">
-                                <small>
+                                <div class="content">
+                                    <ul class="list-unstyled">
+                                        <li class="card card-nested">
+                                            <div class="content">
+                                                <p class="clear-margin" itemprop="award">
+                                                    <strong>Academic Achievement</strong>,&nbsp; Carleton University
+                                                </p>
+                                                <p class="text-muted">
+                                                    <small>
                                   Awarded on: Oct 15, 2014
                                 </small>
-                              </p>
-                              <p class="clear-margin"> Maintaining a CGPA above 10.0 </p>
+                                                </p>
+                                                <p class="clear-margin"> Maintaining a CGPA above 10.0 </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                          </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-
-
-
-                <div class="detail" id="references">
-                  <div class="icon">
-                    <i class="fa fa-lg fa-thumbs-up"></i>
-                    <span class="mobile-title">References</span>
-                  </div>
-                  <div class="info">
-                    <h4 class="title text-uppercase">
+                        </div>
+                        <div class="detail" id="references">
+                            <div class="icon">
+                                <i class="fa fa-lg fa-thumbs-up"></i>
+                                <span class="mobile-title">References</span>
+                            </div>
+                            <div class="info">
+                                <h4 class="title text-uppercase">
                       References
                     </h4>
-
-                    <div class="content">
-                      <ul class="list-unstyled">
-                          <li class="card card-nested">
-                            <p>
-                              <strong>Morin, Kieth - Alcatel-Lucent</strong>
-                            </p>
-                            <blockquote class="quote">
-                              <p class="clear-margin"><a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="6d06080419054300021f04032d0c010e0c1908014001180e080319430e0200">[email&#160;protected]</a><script cf-hash='f9e31' type="text/javascript">
-/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("cf-hash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}}}catch(u){}}();/* ]]> */</script> </p>
-                            </blockquote>
-                          </li>
-                          <li class="card card-nested">
-                            <p>
-                              <strong>Munje, Arun - Vayyoo</strong>
-                            </p>
-                            <blockquote class="quote">
-                              <p class="clear-margin"><a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="442529312a2e210432253d3d2b2b6a272b29">[email&#160;protected]</a><script cf-hash='f9e31' type="text/javascript">
-/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("cf-hash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}}}catch(u){}}();/* ]]> */</script> </p>
-                            </blockquote>
-                          </li>
-                          <li class="card card-nested">
-                            <p>
-                              <strong>Ayafor, Ayafor - TekWorthy</strong>
-                            </p>
-                            <blockquote class="quote">
-                              <p class="clear-margin"><a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="51302830373e231125343a263e232539287f323e3c">[email&#160;protected]</a><script cf-hash='f9e31' type="text/javascript">
-/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("cf-hash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}}}catch(u){}}();/* ]]> */</script> </p>
-                            </blockquote>
-                          </li>
-                      </ul>
+                                <div class="content">
+                                    <ul class="list-unstyled">
+                                        <li class="card card-nested">
+                                            <p>
+                                                <strong>Morin, Kieth - Alcatel-Lucent</strong>
+                                            </p>
+                                            <blockquote class="quote">
+                                                <p class="clear-margin"><a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="6d06080419054300021f04032d0c010e0c1908014001180e080319430e0200">[email&#160;protected]</a>
+                                                    <script cf-hash='f9e31' type="text/javascript">
+                                                    /* <![CDATA[ */ ! function() {
+                                                        try {
+                                                            var t = "currentScript" in document ? document.currentScript : function() {
+                                                                for (var t = document.getElementsByTagName("script"), e = t.length; e--;)
+                                                                    if (t[e].getAttribute("cf-hash")) return t[e]
+                                                            }();
+                                                            if (t && t.previousSibling) {
+                                                                var e, r, n, i, c = t.previousSibling,
+                                                                    a = c.getAttribute("data-cfemail");
+                                                                if (a) {
+                                                                    for (e = "", r = parseInt(a.substr(0, 2), 16), n = 2; a.length - n; n += 2) i = parseInt(a.substr(n, 2), 16) ^ r, e += String.fromCharCode(i);
+                                                                    e = document.createTextNode(e), c.parentNode.replaceChild(e, c)
+                                                                }
+                                                            }
+                                                        } catch (u) {}
+                                                    }(); /* ]]> */
+                                                    </script>
+                                                </p>
+                                            </blockquote>
+                                        </li>
+                                        <li class="card card-nested">
+                                            <p>
+                                                <strong>Munje, Arun - Vayyoo</strong>
+                                            </p>
+                                            <blockquote class="quote">
+                                                <p class="clear-margin"><a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="442529312a2e210432253d3d2b2b6a272b29">[email&#160;protected]</a>
+                                                    <script cf-hash='f9e31' type="text/javascript">
+                                                    /* <![CDATA[ */ ! function() {
+                                                        try {
+                                                            var t = "currentScript" in document ? document.currentScript : function() {
+                                                                for (var t = document.getElementsByTagName("script"), e = t.length; e--;)
+                                                                    if (t[e].getAttribute("cf-hash")) return t[e]
+                                                            }();
+                                                            if (t && t.previousSibling) {
+                                                                var e, r, n, i, c = t.previousSibling,
+                                                                    a = c.getAttribute("data-cfemail");
+                                                                if (a) {
+                                                                    for (e = "", r = parseInt(a.substr(0, 2), 16), n = 2; a.length - n; n += 2) i = parseInt(a.substr(n, 2), 16) ^ r, e += String.fromCharCode(i);
+                                                                    e = document.createTextNode(e), c.parentNode.replaceChild(e, c)
+                                                                }
+                                                            }
+                                                        } catch (u) {}
+                                                    }(); /* ]]> */
+                                                    </script>
+                                                </p>
+                                            </blockquote>
+                                        </li>
+                                        <li class="card card-nested">
+                                            <p>
+                                                <strong>Ayafor, Ayafor - TekWorthy</strong>
+                                            </p>
+                                            <blockquote class="quote">
+                                                <p class="clear-margin"><a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="51302830373e231125343a263e232539287f323e3c">[email&#160;protected]</a>
+                                                    <script cf-hash='f9e31' type="text/javascript">
+                                                    /* <![CDATA[ */ ! function() {
+                                                        try {
+                                                            var t = "currentScript" in document ? document.currentScript : function() {
+                                                                for (var t = document.getElementsByTagName("script"), e = t.length; e--;)
+                                                                    if (t[e].getAttribute("cf-hash")) return t[e]
+                                                            }();
+                                                            if (t && t.previousSibling) {
+                                                                var e, r, n, i, c = t.previousSibling,
+                                                                    a = c.getAttribute("data-cfemail");
+                                                                if (a) {
+                                                                    for (e = "", r = parseInt(a.substr(0, 2), 16), n = 2; a.length - n; n += 2) i = parseInt(a.substr(n, 2), 16) ^ r, e += String.fromCharCode(i);
+                                                                    e = document.createTextNode(e), c.parentNode.replaceChild(e, c)
+                                                                }
+                                                            }
+                                                        } catch (u) {}
+                                                    }(); /* ]]> */
+                                                    </script>
+                                                </p>
+                                            </blockquote>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-
-            </div>
-          </div>
-        </section>
-      </div>
+            </section>
+        </div>
     </div>
-
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/tooltip.js"></script>
-  <script type="text/javascript">
-/* <![CDATA[ */
-(function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&a.indexOf("/cdn-cgi/l/email-protection") > -1  && (a.length > 28)){s='';j=27+ 1 + a.indexOf("/cdn-cgi/l/email-protection");if (a.length > j) {r=parseInt(a.substr(j,2),16);for(j+=2;a.length>j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);}t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
-/* ]]> */
-</script>
+    <script type="text/javascript">
+    /* <![CDATA[ */
+    (function() {
+        try {
+            var s, a, i, j, r, c, l = document.getElementsByTagName("a"),
+                t = document.createElement("textarea");
+            for (i = 0; l.length - i; i++) {
+                try {
+                    a = l[i].getAttribute("href");
+                    if (a && a.indexOf("/cdn-cgi/l/email-protection") > -1 && (a.length > 28)) {
+                        s = '';
+                        j = 27 + 1 + a.indexOf("/cdn-cgi/l/email-protection");
+                        if (a.length > j) {
+                            r = parseInt(a.substr(j, 2), 16);
+                            for (j += 2; a.length > j && a.substr(j, 1) != 'X'; j += 2) {
+                                c = parseInt(a.substr(j, 2), 16) ^ r;
+                                s += String.fromCharCode(c);
+                            }
+                            j += 1;
+                            s += a.substr(j, a.length - j);
+                        }
+                        t.innerHTML = s.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        l[i].setAttribute("href", "mailto:" + t.value);
+                    }
+                } catch (e) {}
+            }
+        } catch (e) {}
+    })();
+    /* ]]> */
+    </script>
 </body>
+
 </html>
