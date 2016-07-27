@@ -2,10 +2,9 @@
   "basics": {
     "name": "Seena Rowhani",
     "label": "Software Developer",
-    "picture": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAI7AAAAJDE5ZDY4YzIwLWYyY2QtNDI0OS04YzBiLWYwMWIyYWM5MjJmMQ.jpg",
     "email": "seenarowhani95@gmail.com",
     "website": "http://github.com/srowhani",
-    "summary": "A student of Carleton University, majoring in the field of Software Engineering. My goal is to pursue my passion in software and applications development, and apply the education that's been received in the real world. The beginning of this pursuit has taken the shape of the application design, peer mentoring services, and the university studies.",
+    "summary": "A student of Carleton University, majoring in the field of Software Engineering. I like to make things.",
     "location": {
       "city": "Ottawa",
       "countryCode": "CA",
@@ -31,11 +30,6 @@
         "network" : "Facebook",
         "username": "seena.rowhani",
         "url" : "https://www.facebook.com/seena.rowhani"
-      },
-      {
-        "network" : "Instagram",
-        "username" : "seenarowhani",
-        "url" : "https://instagram.com/seenarowhani/"
       }
     ]
   },
@@ -49,20 +43,23 @@
       "summary": "Worked with amazing talent on the front and back end of products BluePlanet, IceBreaker, and Frost UX style guide.",
       "highlights": [
         "Used Ember.js to rapidly create and prototype web apps",
+        "Automated builds, TeamCity and Travis, and ember-deploy to improve workflow",
+        "Command line tools to assist PV contribute to testing ecosystem",
         "Created Ember addons to be used as tools for other developers as a standard",
         "Programming experience with Javascript ES6 (using Babel), and node module exports",
         "Back end using Java's Jersey library, and Google's GSON to parse requests.",
-        "Canvas and d3 SVG visualizations to display network elements"
+        "Canvas and d3 SVG visualizations to display complex systems"
       ]
     },
     {
-      "company": "Alcatel-Lucent",
+      "company": "Alcatel-Lucent (Nokia)",
       "position": "Software Designer",
       "website": "https://www.alcatel-lucent.com/",
       "startDate": "2015-05-12",
       "endDate": "2015-09-15",
       "summary": "Developed along side of extremely talented designers and testers, refining and designing popular applications that would be used both internally and externally.",
       "highlights": [
+        "Yeoman application scaffolding",
         "Developed features for Web Applications using popular industry tools",
         "Experience with popular build, automation, and development interfaces",
         "Manipulation of both Javascript and Java code base, for front and back-end development",
@@ -87,7 +84,7 @@
       "position": "Teaching Assistant",
       "website": "http://carleton.ca",
       "startDate": "2014-09-14",
-      "endDate": "2015-05-15",
+      "endDate": "2016-06-09",
       "summary": "Taught many popular programming courses to mainly first year students, aiding them in the process of learning.",
       "highlights": [
         "Facilitate weekly office hours, in order to ensure that students are fully understanding the course material, and to provide extra attention to those that need it.",
@@ -121,7 +118,6 @@
       "endDate": "2018-05-22",
       "gpa": "10.5",
       "courses": [
-        "16WN STAT 2507     0.5 CUR",
         "16WN COMP 3008     0.5 B",
         "16WN COMP 3007     0.5 A",
         "16WN COMP 3005     0.5 A",
@@ -157,18 +153,21 @@
   "publications": [],
   "skills": [
     {
-      "name": "Software Design",
-      "level": "Proficient",
+      "name": "Web Development",
+      "level": "advanced",
       "keywords": [
         "HTML5",
-        "CSS",
+        "CSS3, S(A/C)SS, Bourbon",
         "Javascript",
-        "React",
-        "Ember",
-        "Meteor",
-        "Babel",
-        "Grunt",
-        "Node",
+        "Node.js",
+        "Ember.js",
+        "Meteor"
+      ]
+    },
+    {
+      "name": "Software Design",
+      "level": "intermediate",
+      "keywords": [
         "Java",
         "C, C++",
         "Python"
@@ -176,11 +175,13 @@
     },
     {
       "name": "Automation, Building, and Testing",
-      "level": "Proficient",
+      "level": "advanced",
       "keywords": [
         "Gradle",
         "Bower",
         "Mocha",
+        "Chai",
+        "qUnit",
         "Gulp",
         "Jasmine"
       ]
@@ -193,11 +194,10 @@
     },
     {
       "language": "Farsi",
-      "fluency": "Adequate"
+      "fluency": "fluent"
     }
   ],
-  "interests": [
-  ],
+  "interests": [],
   "references": [
     {
       "name": "Lidstone, Kevin",
