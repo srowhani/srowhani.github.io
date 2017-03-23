@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row social">
+    <ul>
+      {{#each footer.social.profiles as |profile|}}
+        <li>
+          <a href={{profile.url}} target='_blank'>
+            <i class="fa {{profile.icon}}" aria-hidden='true'/>
+          </a>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</div>

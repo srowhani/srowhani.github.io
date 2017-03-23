@@ -1,0 +1,11 @@
+<h2 class="heading">Organizations</h2>
+<div class='organizations'>
+  {{#each organizations as |org|}}
+    <div class='organization'>
+      <h4>{{org.login}}</h4>
+      <a href={{org.url}} target='_blank'>
+        <img src={{org.avatar_url}} class='img-circle organization-image'>
+      </a>
+    </div>
+  {{/each}}
+</div>

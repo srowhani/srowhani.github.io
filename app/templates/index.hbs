@@ -1,0 +1,44 @@
+<!-- Menu -->
+{{portfolio-menu
+  openHeader=(action (mut headerVisible) true)
+}}
+<!-- Header -->
+{{portfolio-header
+  headerVisible=headerVisible
+  closeHeader=(action (mut headerVisible) false)
+  header=model.header
+}}
+<!-- Lead -->
+{{portfolio-lead
+  lead=model.lead
+}}
+<!-- About -->
+{{portfolio-about
+  about=model.about
+}}
+<!-- Experiences -->
+{{portfolio-experience
+  experiences=model.experiences
+}}
+<!-- Education -->
+{{portfolio-education
+  education=model.education
+}}
+<!-- Projects -->
+{{portfolio-projects
+  projects=model.projects
+}}
+<!-- Skills -->
+{{portfolio-skills
+  skills=model.skills
+}}
+<!-- Organizations -->
+{{portfolio-organizations
+  organizations=model.organizations
+}}
+{{portfolio-contact
+  contact=model.contact
+}}
+{{portfolio-footer
+  footer=model.footer
+}}

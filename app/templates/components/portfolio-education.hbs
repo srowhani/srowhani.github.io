@@ -1,0 +1,11 @@
+<h2 class="heading">Education</h2>
+{{#each education as |edu|}}
+<div class="education-block">
+  <h3>{{edu.institution}}</h3>
+  <span class="education-date">{{edu.startDate}} - {{edu.endDate}}</span>
+  <h4>{{edu.area}}</h4>
+  <p>
+    {{edu.description}}
+  </p>
+</div>
+{{/each}}

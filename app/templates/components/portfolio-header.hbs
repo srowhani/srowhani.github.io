@@ -1,0 +1,12 @@
+<div id='mobile-menu-close' {{action closeHeader}}>
+  <span>Close</span> <i class='fa fa-times' aria-hidden='true'></i>
+</div>
+<ul id='menu' class='shadow'>
+  {{#each header.sections as |section|}}
+    <li>
+      <a href={{section.href}} onclick={{action 'moveTo' section.href}}>
+        {{section.title}}
+      </a>
+    </li>
+  {{/each}}
+</ul>
