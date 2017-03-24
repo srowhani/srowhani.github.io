@@ -39,6 +39,7 @@
     "ember-service-worker-asset-cache": "0.6.0",
     "ember-service-worker-cache-fallback": "0.6.0",
     "ember-service-worker-index": "0.6.1",
+    "liquid-fire": "0.27.2",
     "loader.js": "^4.0.10"
   },
   "engines": {
