@@ -1,17 +1,27 @@
-<h2 class="heading">Experience</h2>
-<div id="experience-timeline">
+<h2 class='heading'>Experience</h2>
+<div id='experience-timeline'>
   {{#each experiences as |experience|}}
-    <div data-date="{{experience.startDate}} – {{experience.endDate}}">
-      <h3>{{experience.company}}</h3>
-      <h4>{{experience.position}}</h4>
-      <p>
-        {{experience.summary}}
-      </p>
-      <ul>
-        {{#each experience.highlights as |highlight|}}
-          <li>{{highlight}}</li>
-        {{/each}}
-      </ul>
+    <div class='vtimeline-point'>
+      <div class='vtimeline-icon'>
+        <i class='fa fa-map-marker'/>
+      </div>
+      <div class='vtimeline-block'>
+        <span class='vtimeline-date'>
+          {{experience.startDate}} – {{experience.endDate}}
+        </span>
+        <div class='vtimeline-content'>
+          <h3>{{experience.company}}</h3>
+          <h4>{{experience.position}}</h4>
+          <p>
+            {{experience.summary}}
+          </p>
+          <ul>
+            {{#each experience.highlights as |highlight|}}
+              <li>{{highlight}}</li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
     </div>
   {{/each}}
 </div>

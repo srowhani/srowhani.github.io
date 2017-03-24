@@ -13,8 +13,7 @@
       "studyType": "Bachelor",
       "startDate": "2013-09-07",
       "endDate": "2018-05-22",
-      "gpa": "10.5",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat."
+      "gpa": "10.5"
     }
   ],
   "experiences": [
@@ -36,7 +35,7 @@
       ]
     },
     {
-      "company": "Alcatel-Lucent (Nokia}",
+      "company": "Nokia (formerly Alcatel-Lucent)",
       "position": "Software Designer",
       "website": "https://www.alcatel-lucent.com/",
       "startDate": "2015-05-12",
@@ -78,7 +77,7 @@
       ]
     },
     {
-      "company": "Vayyoo",
+      "company": "CafeX (formerly Vayyoo)",
       "position": "Web Developer",
       "website": "http://vayyoo.com/www/main/",
       "startDate": "2013-05-22",
@@ -98,11 +97,13 @@
       "level": "advanced",
       "keywords": [
         "HTML5",
-        "CSS3, S(A/C}SS, Bourbon",
+        "CSS3",
         "Javascript",
-        "Node.js",
         "Ember.js",
-        "Meteor"
+        "React",
+        "Vue.js",
+        "Meteor",
+        "Aurelia"
       ]
     },
     {
@@ -110,16 +111,18 @@
       "level": "intermediate",
       "keywords": [
         "Java",
-        "C, C++",
-        "Python"
+        "C Language",
+        "C++",
+        "Python",
+        "Golang",
+        "Android",
+        "Node.js"
       ]
     },
     {
       "name": "Automation, Building, and Testing",
       "level": "advanced",
       "keywords": [
-        "Gradle",
-        "Bower",
         "Mocha",
         "Chai",
         "qUnit",
