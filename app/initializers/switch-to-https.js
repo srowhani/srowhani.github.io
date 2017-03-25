@@ -1,6 +1,6 @@
 export function initialize(/* application */) {
-  if (window.location.protocol == "http:") {
-    window.location.protocol = "https:"
+  if (window.location.protocol == 'http:') {
+    window.location.protocol = 'https:'
   }
 }
 
