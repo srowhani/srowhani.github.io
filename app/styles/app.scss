@@ -316,6 +316,7 @@ header {
   height: 100%;
   background: url(../images/lead-bg.svg);
   background-repeat: repeat-y;
+  background-attachment: fixed;
   transition: 0s linear;
   transform: translateZ(0);
   transform-style: preserve-3d;

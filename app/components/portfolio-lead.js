@@ -7,18 +7,21 @@ export default Ember.Component.extend({
     easing: 'easeOutQuart'
   }),
   _eventListener (el) {
-    const scrollTop = Math.floor(document.body.scrollTop * 0.5)
+    const scrollTop = (document.body.scrollTop / 2) | 0
     el.css({
       backgroundPositionY: `${scrollTop}px`
     })
   },
   didInsertElement () {
     const el = this.$('.lead-overlay')
-    this._eventListener = this._eventListener.bind(this, el)
-    window.addEventListener('scroll', this._eventListener, {passive: true, capture: true})
+    const _ = this._eventListener.bind(this, el)
+    this._boundedEventListener = () => {
+      requestAnimationFrame(_)
+    }
+    window.addEventListener('scroll', this._boundedEventListener, {passive: true, capture: true})
   },
   willDestroy () {
-    window.removeEventListener('scroll', this._eventListener)
+    window.removeEventListener('scroll', this._boundedEventListener)
   },
   actions: {
     moveTo () {
