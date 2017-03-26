@@ -309,12 +309,27 @@ header {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.svg),linear-gradient(180deg, #24292e, #2b3137);
-    background-size: cover;
-    padding: 15px;
+    background: #24292e;
     overflow: hidden;
 }
-
+.lead-overlay {
+  height: 100%;
+  background: url(../images/lead-bg.svg);
+  background-repeat: repeat-y;
+  transition: .25s linear;
+  transform: translateZ(0);
+  transform-style: preserve-3d;
+  transition-property: background-position;
+  background-size: cover;
+}
+footer {
+  position: relative;
+  small {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
 #lead-content {
     position: absolute;
     z-index: 10;

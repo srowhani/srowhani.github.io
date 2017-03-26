@@ -9,7 +9,8 @@ module.exports = function(defaults) {
         'bower_components/bootstrap-sass/assets/stylesheets'
       ]
     }
-  });
+  })
+
   app.import('bower_components/moveto/dist/moveTo.min.js')
-  return app.toTree();
+  return app.toTree()
 };
