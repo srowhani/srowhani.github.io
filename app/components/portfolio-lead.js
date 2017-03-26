@@ -1,14 +1,13 @@
 import Ember from 'ember';
-import config from '../config/environment';
 
 export default Ember.Component.extend({
   elementId: 'lead',
   moveTo: new MoveTo({
-    duration: 2000,
+    duration: 1200,
     easing: 'easeOutQuart'
   }),
   _eventListener (el) {
-    const scrollTop = document.body.scrollTop * 1.5
+    const scrollTop = Math.floor(document.body.scrollTop * 0.5)
     el.css({
       backgroundPositionY: `${scrollTop}px`
     })
