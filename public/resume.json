@@ -171,26 +171,26 @@
       "login": "ciena-blueplanet",
       "id": 4604820,
       "url": "https://github.com/ciena-blueplanet",
-      "avatar_url": "https://avatars3.githubusercontent.com/u/4604820?v=3",
+      "avatar_url": "images/4604820.png",
       "description": "A division of Ciena"
     },
     {
       "login": "ciena-frost",
       "id": 16601148,
       "url": "https://github.com/ciena-frost",
-      "avatar_url": "https://avatars1.githubusercontent.com/u/16601148?v=3"
+      "avatar_url": "images/16601148.png"
     },
     {
       "login": "migrate-app",
       "id": 22104835,
       "url": "https://github.com/migrate-app",
-      "avatar_url": "https://avatars0.githubusercontent.com/u/22104835?v=3"
+      "avatar_url": "images/22104835.png"
     },
     {
       "login": "proccoli",
       "id": 22964937,
       "url": "https://github.com/proccoli",
-      "avatar_url": "https://avatars2.githubusercontent.com/u/22964937?v=3"
+      "avatar_url": "images/22964937.png"
     }
   ],
   "projects": [
@@ -202,7 +202,7 @@
     },
     {
       "name": "proccoli-pm",
-      "url": "http://github.com/srowhani/democracy",
+      "url": "http://github.com/proccoli/proccoli-pm",
       "tldr": "Process Manager written in python.",
       "description": "Uses linux's proc virtual fs to persist information and metrics about the system, and uses urwid console interface to render it."
     },
