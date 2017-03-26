@@ -7,10 +7,18 @@ export default Ember.Component.extend({
     easing: 'easeOutQuart'
   }),
   _eventListener (el) {
+    if (!this._inViewPort(el[0]))
+      return
+
     const scrollTop = (document.body.scrollTop / 2) | 0
     el.css({
       backgroundPositionY: `${scrollTop}px`
     })
+  },
+  _inViewPort (element) {
+    const b = element.getBoundingClientRect().bottom;
+    const h = document.documentElement;
+    return b >= 0 && b <= (window.innerHeight || h.clientHeight)
   },
   didInsertElement () {
     const el = this.$('.lead-overlay')
