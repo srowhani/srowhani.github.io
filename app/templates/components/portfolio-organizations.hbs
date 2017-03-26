@@ -4,7 +4,11 @@
     <div class='organization'>
       <h4>{{org.login}}</h4>
       <a href={{org.url}} target='_blank' rel='noopener'>
-        <img src={{org.avatar_url}} class='img-circle organization-image'>
+        <img
+          src={{org.avatar_url}}
+          class='img-circle organization-image'
+          alt={{org.login}}
+        />
       </a>
     </div>
   {{/each}}

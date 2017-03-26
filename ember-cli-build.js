@@ -4,6 +4,9 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
+    'ember-service-worker': {
+      registrationStrategy: 'async'
+    },
     sassOptions: {
       includePaths: [
         'bower_components/bootstrap-sass/assets/stylesheets'
