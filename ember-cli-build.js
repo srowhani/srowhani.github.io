@@ -2,7 +2,7 @@
 /* global require, module */
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
-module.exports = function(defaults) {
+module.exports = function (defaults) {
   var app = new EmberApp(defaults, {
     'ember-service-worker': {
       registrationStrategy: 'async'
@@ -12,8 +12,8 @@ module.exports = function(defaults) {
         'bower_components/bootstrap-sass/assets/stylesheets'
       ]
     }
-  })
+  });
 
-  app.import('bower_components/moveto/dist/moveTo.min.js')
-  return app.toTree()
+  app.import('bower_components/moveto/dist/moveTo.min.js');
+  return app.toTree();
 };

@@ -1,11 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  moveTo: Ember.inject.service(),
   elementId: 'lead',
-  moveTo: new MoveTo({
-    duration: 1200,
-    easing: 'easeOutQuart'
-  }),
   _eventListener (el) {
     if (!this._inViewPort(el[0]))
       return
@@ -33,7 +30,7 @@ export default Ember.Component.extend({
   },
   actions: {
     moveTo () {
-      this.moveTo.move(this.$().next()[0])
+      this.get('moveTo').move(this.$().next()[0])
     }
   }
 });
