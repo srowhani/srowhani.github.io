@@ -8,7 +8,7 @@ export default Ember.Component.extend({
       return;
     }
 
-    const scrollTop = (document.body.scrollTop / 2) | 0;
+    const scrollTop = document.body.scrollTop / 2;
     el.css({
       backgroundPositionY: `${scrollTop}px`
     });
