@@ -2,8 +2,21 @@
 <div id='contact-form'>
   <form method='POST' action={{email}}>
     <input type='hidden' name='_subject' value='Contact request from personal website'/>
-    <input label='Email: ' type='email' name='_replyto' placeholder='Your email' required>
-    <textarea label='Message: ' name='message' placeholder='Your message' required></textarea>
+    <label for='replyto'>Email</label>
+    <input
+      id='replyto'
+      type='email'
+      name='_replyto'
+      placeholder='Your email'
+      required
+    />
+    <label for='message'>Message</label>
+    <textarea
+      id='message'
+      name='message'
+      placeholder='Your message'
+      required
+    />
     <button type='submit'>Send</button>
   </form>
 </div>

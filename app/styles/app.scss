@@ -767,6 +767,9 @@ footer {
             outline: none;
             background: darken($base-color, 25%);
         }
+        label {
+          color: #fff;
+        }
     }
 
     textarea {

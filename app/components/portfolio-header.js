@@ -6,11 +6,11 @@ export default Ember.Component.extend({
   classNameBindings: ['headerVisible:active'],
   actions: {
     moveTo (section, e) {
-      e.preventDefault()
-      this.get('moveTo').move($(section)[0])
+      e.preventDefault();
+      this.get('moveTo').move(Ember.$(section)[0]);
 
       if (this.$().hasClass('active')) {
-        this.sendAction('closeHeader')
+        this.sendAction('closeHeader');
       }
     }
   }

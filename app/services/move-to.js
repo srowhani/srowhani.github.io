@@ -1,7 +1,8 @@
 import Ember from 'ember';
 
 const {
-  MoveTo
+  requestIdleCallback,
+  MoveTo,
 } = window;
 
 export default Ember.Service.extend({
@@ -14,7 +15,7 @@ export default Ember.Service.extend({
       return;
     }
     requestIdleCallback(() => {
-      this.moveTo.move(target)
-    })
+      this.moveTo.move(target);
+    });
   }
 });

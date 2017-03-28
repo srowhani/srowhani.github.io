@@ -8,7 +8,7 @@ export default Ember.Component.extend({
   emberVersion: Ember.VERSION,
   actions: {
     goUp () {
-      this.get('moveTo').move(Ember.$('header')[0])
+      this.get('moveTo').move(Ember.$('header')[0]);
     }
   }
 });

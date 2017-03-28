@@ -16,10 +16,8 @@ test('it renders', function(assert) {
 
   // Template block usage:
   this.render(hbs`
-    {{#pacman-loader}}
-      template block text
-    {{/pacman-loader}}
+    {{pacman-loader}}
   `);
 
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(this.$('.pacman').length, 1);
 });

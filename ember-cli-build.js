@@ -11,6 +11,9 @@ module.exports = function (defaults) {
       includePaths: [
         'bower_components/bootstrap-sass/assets/stylesheets'
       ]
+    },
+    fingerprint: {
+      exclude: ['images/*.png']
     }
   });
 
