@@ -9,8 +9,13 @@ export default Ember.Component.extend({
     }
 
     const scrollTop = document.body.scrollTop / 2;
+    const scale = 1 + Math.max(0, scrollTop / 800)
+    const blur = Math.max(0, Math.log(scrollTop))
+
     el.css({
-      backgroundPositionY: `${scrollTop}px`
+      backgroundPositionY: `${scrollTop}px`,
+      transform: `scale(${scale})`,
+      filter: `blur(${blur}px)`
     });
   },
   _inViewPort (element) {
