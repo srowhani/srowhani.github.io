@@ -314,21 +314,26 @@ header {
     background: #24292e;
     overflow: hidden;
 }
-.lead-overlay {
+.lead-overlay, .lead-blur {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(../images/lead-bg.svg);
   background-repeat: repeat-y;
   background-attachment: fixed;
   transition: 0s linear;
   transform: translateZ(0);
-  transform-style: preserve-3d;
-  transition-property: background-position;
   will-change: background-position-y;
   background-size: cover;
+}
+
+.lead-overlay {
+  background: url(../images/lead-bg.png);
+}
+.lead-blur {
+  background: url(../images/lead-bg-blur.png);
+  opacity: 0;
 }
 footer {
   position: relative;

@@ -3,18 +3,22 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   moveTo: Ember.inject.service(),
   elementId: 'lead',
-  _eventListener (el) {
-    if (!this._inViewPort(el[0])) {
+  _eventListener (el, blur) {
+    if (this._inProgress || !this._inViewPort(el[0])) {
       return;
     }
-
+    this._inProgress = true;
     const scrollTop = document.body.scrollTop / 2;
-    const blur = Math.max(0, Math.log(scrollTop))
 
     el.css({
-      backgroundPositionY: `${scrollTop}px`,
-      filter: `blur(${blur}px)`
+      top: `${scrollTop}px`
     });
+
+    blur.css({
+      top: `${scrollTop / 1.1125}px`,
+      opacity: (scrollTop + 120) / window.innerHeight
+    });
+    requestAnimationFrame(() => this._inProgress = false);
   },
   _inViewPort (element) {
     const b = element.getBoundingClientRect().bottom;
@@ -22,10 +26,12 @@ export default Ember.Component.extend({
   },
   didInsertElement () {
     const el = this.$('.lead-overlay');
-    const _ = this._eventListener.bind(this, el);
+    const blur = this.$('.lead-blur');
+    const _ = this._eventListener.bind(this, el, blur);
     this._boundedEventListener = () => {
       requestAnimationFrame(_);
     };
+    _();
     window.addEventListener('scroll', this._boundedEventListener, {passive: true, capture: true});
   },
   willDestroy () {
