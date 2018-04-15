@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 const {
-  requestIdleCallback,
+  requestAnimationFrame,
   MoveTo,
 } = window;
 
@@ -14,7 +14,7 @@ export default Ember.Service.extend({
     if (!target) {
       return;
     }
-    requestIdleCallback(() => {
+    requestAnimationFrame(() => {
       this.moveTo.move(target);
     });
   }
