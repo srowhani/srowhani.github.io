@@ -222,7 +222,7 @@ export default Ember.Component.extend({
     const initial = parseInt(getComputedStyle(video).top);
     window.onscroll = _ => {
       requestAnimationFrame(() =>
-        video.style.top = initial + document.documentElement.scrollTop + 'px'
+        video.style.top = initial + document.documentElement.scrollTop / 1.2 + 'px'
       )
     }
   },
