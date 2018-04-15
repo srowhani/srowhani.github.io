@@ -195,10 +195,16 @@
   ],
   "projects": [
     {
-      "name": "democracy",
-      "url": "http://github.com/srowhani/democracy",
-      "tldr": "Visualize voting based on the contents and frequency of tweet hashtags via Twitters Stream API.",
-      "description": "Built using: express, socket.io, d3, Ember.js"
+      "name": "sass-lint-auto-fix",
+      "url": "https://github.com/srowhani/sass-lint-auto-fix",
+      "tldr": "Automatically resolve s(a|c)ss linting issues",
+      "description": "Issues are resolved by parsing the s(a|c)ss as an ast, traversing through it, and performing modifications"
+    },
+    {
+      "name": "trendify-app",
+      "url": "https://devpost.com/software/trendify-bdsve7",
+      "tldr": "Submission for CUHacking 2018",
+      "description": "A web/iOS based game which uses open source google trend module powered by STDLIB to allow users to compete."
     },
     {
       "name": "proccoli-pm",
@@ -207,10 +213,10 @@
       "description": "Uses linux's proc virtual fs to persist information and metrics about the system, and uses urwid console interface to render it."
     },
     {
-      "name": "audiophile",
-      "url": "http://github.com/srowhani/audiophile",
-      "tldr": "Audio Visualizer",
-      "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback"
+      "name": "democracy",
+      "url": "http://github.com/srowhani/democracy",
+      "tldr": "Visualize voting based on the contents and frequency of tweet hashtags via Twitters Stream API.",
+      "description": "Built using: express, socket.io, d3, Ember.js"
     }
   ],
   "footer": {
