@@ -314,7 +314,9 @@ header {
     background: #24292e;
     overflow: hidden;
 }
-.lead-overlay, .lead-blur {
+.lead-overlay {
+  background: url(../images/lead-bg.png);
+
   position: absolute;
   top: 0;
   left: 0;
@@ -326,15 +328,15 @@ header {
   transform: translateZ(0);
   will-change: background-position-y;
   background-size: cover;
+
+  video {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: calc(100% + 50vh);
+  }
 }
 
-.lead-overlay {
-  background: url(../images/lead-bg.png);
-}
-.lead-blur {
-  background: url(../images/lead-bg-blur.png);
-  opacity: 0;
-}
 footer {
   position: relative;
   small {
