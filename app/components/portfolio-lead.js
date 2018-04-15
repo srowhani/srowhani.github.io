@@ -218,6 +218,13 @@ export default Ember.Component.extend({
     	length: 15,
     	radius: (document.querySelector('#lead-content').offsetWidth / 10)
     });
+    const video = document.querySelector('video');
+    const initial = parseInt(getComputedStyle(video).top);
+    window.onscroll = _ => {
+      requestAnimationFrame(() =>
+        video.style.top = initial + document.documentElement.scrollTop + 'px'
+      )
+    }
   },
   actions: {
     moveTo () {
