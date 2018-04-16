@@ -12,9 +12,12 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember test"
+    "test": "ember test",
+    "deploy": "./deploy.sh",
+    "generate-resume": "node resume/generate.js"
   },
   "devDependencies": {
+    "atob": "^2.1.0",
     "broccoli-asset-rev": "^2.4.5",
     "ember-cli": "2.9.0-beta.2",
     "ember-cli-babel": "^5.1.7",
@@ -35,7 +38,10 @@
     "ember-web-app": "1.1.0",
     "ember-web-app-rename": "1.0.0",
     "ember-windoc": "0.1.8",
-    "loader.js": "^4.0.10"
+    "handlebars": "^4.0.11",
+    "html-pdf": "^2.2.0",
+    "loader.js": "^4.0.10",
+    "moment": "^2.22.1"
   },
   "engines": {
     "node": ">= 0.12.0"
