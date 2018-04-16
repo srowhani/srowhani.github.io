@@ -168,52 +168,51 @@
   },
   "organizations": [
     {
-      "login": "ciena-blueplanet",
-      "id": 4604820,
-      "url": "https://github.com/ciena-blueplanet",
-      "avatar_url": "images/4604820.png",
-      "description": "A division of Ciena"
-    },
-    {
-      "login": "ciena-frost",
-      "id": 16601148,
-      "url": "https://github.com/ciena-frost",
-      "avatar_url": "images/16601148.png"
+      "login": "Gitskarios",
+      "url": "https://github.com/gitskarios",
+      "avatar_url": "images/11989662.png"
     },
     {
       "login": "migrate-app",
-      "id": 22104835,
       "url": "https://github.com/migrate-app",
       "avatar_url": "images/22104835.png"
     },
     {
-      "login": "proccoli",
-      "id": 22964937,
+      "login": "trendify-app",
+      "url": "https://github.com/trendify-app",
+      "avatar_url": "images/37960144.png"
+    },
+    {
+      "login": "proccoli-pm",
       "url": "https://github.com/proccoli",
       "avatar_url": "images/22964937.png"
     }
   ],
   "projects": [
     {
-      "name": "sass-lint-auto-fix",
+      "name": "sl-auto-fix",
+      "img": "images/project/sass-lint-auto-fix.png",
       "url": "https://github.com/srowhani/sass-lint-auto-fix",
       "tldr": "Automatically resolve s(a|c)ss linting issues",
       "description": "Issues are resolved by parsing the s(a|c)ss as an ast, traversing through it, and performing modifications"
     },
     {
       "name": "trendify-app",
+      "img": "images/project/trendify.png",
       "url": "https://devpost.com/software/trendify-bdsve7",
       "tldr": "Submission for CUHacking 2018",
       "description": "A web/iOS based game which uses open source google trend module powered by STDLIB to allow users to compete."
     },
     {
       "name": "proccoli-pm",
+      "img": "images/project/proccoli.png",
       "url": "http://github.com/proccoli/proccoli-pm",
       "tldr": "Process Manager written in python.",
       "description": "Uses linux's proc virtual fs to persist information and metrics about the system, and uses urwid console interface to render it."
     },
     {
       "name": "democracy",
+      "img": "images/project/democracy.png",
       "url": "http://github.com/srowhani/democracy",
       "tldr": "Visualize voting based on the contents and frequency of tweet hashtags via Twitters Stream API.",
       "description": "Built using: express, socket.io, d3, Ember.js"

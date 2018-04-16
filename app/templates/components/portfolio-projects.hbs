@@ -1,20 +1,29 @@
 <h2 class="heading">Projects</h2>
 <div class="container">
-    <div class="row">
-        {{#each projects as |project|}}
-          <div class="project shadow-large">
-            {{#if project.img}}
-                <div class="project-image">
-                  <img src={{project.img}} alt={{project.description}}/>
-                </div>
-              {{/if}}
-              <h3>{{project.name}}</h3>
-              <h5>{{project.tldr}}</h5>
-              <p>
-                {{project.description}}
-              </p>
-              <a href={{project.url}} target='_blank' rel='noopener'>View Project</a>
+  <div class="row">
+    {{#each projects as |project index|}}
+      <div class='project shadow'>
+        <div class='overlay'>
+          <div class='overlay-element'></div>
+          <img src={{project.img}}/>
+        </div>
+        <div class='header'>
+          <div class='title'>
+            {{project.name}}
           </div>
-        {{/each}}
-    </div>
+        </div>
+        <div class='body'>
+          <div class='primary'>
+            {{project.tldr}}
+          </div>
+          <div class='details'>
+            {{project.description}}
+          </div>
+          <div class='link'>
+            <a class='cta' href={{project.url}} target='_blank' rel='noopener'>View Project</a>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
 </div>
