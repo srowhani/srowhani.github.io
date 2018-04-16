@@ -195,9 +195,9 @@ import Ember from 'ember';
 
 	$.fn.constellation = function (options) {
 		return this.each(function () {
-			$window.on('resize', () => {
+			window.onresize = () => {
 				requestAnimationFrame(() => instantiate(this, options));
-			});
+			};
 
 			instantiate(this, options);
 		});
@@ -220,12 +220,18 @@ export default Ember.Component.extend({
     });
     const video = document.querySelector('video');
     const initial = parseInt(getComputedStyle(video).top);
-    window.onscroll = _ => {
+
+		this._animFunction = _ => {
       requestAnimationFrame(() =>
         video.style.top = initial + document.documentElement.scrollTop / 1.2 + 'px'
       )
-    }
+    };
+
+		window.addEventListener('scroll', this._animFunction, { passive: true });
   },
+	willDestroyElement () {
+		window.removeEventListener('scroll', this._animFunction);
+	},
   actions: {
     moveTo () {
       this.get('moveTo').move(this.$().next()[0]);
