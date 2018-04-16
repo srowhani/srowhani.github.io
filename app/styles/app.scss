@@ -648,6 +648,8 @@ footer {
     .row {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
     }
     @media screen and (max-width: 800px){
       .row {
@@ -657,14 +659,7 @@ footer {
 }
 
 .project {
-    margin-left: 10px;
-    border-radius: 4px;
 
-    @media screen and (max-width: 800px){
-      margin-bottom: 20px;
-      width: 80%;
-      align-self: center;
-    }
 }
 
 
