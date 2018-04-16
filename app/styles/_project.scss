@@ -48,10 +48,6 @@ $header-title-bg-color: #3487f7;
 
     }
     img {
-      // -webkit-backface-visibility: hidden;
-      // backface-visibility: hidden;
-      transition: transform .2s ease-in-out;
-      transform: scale(1, 1);
       height: 100%;
       width: 100%;
     }
