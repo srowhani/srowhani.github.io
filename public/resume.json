@@ -4,6 +4,21 @@
     "position": "Software Developer"
   },
   "about": {
+    "languages": [
+      {
+        "language": "English",
+        "fluency": "native speaker"
+      },
+      {
+        "language": "Farsi",
+        "fluency": "fluent"
+      }
+    ],
+    "location": {
+      "city": "Ottawa",
+      "countryCode": "CA",
+      "region": "Ontario"
+    },
     "description": "Passionate developer with a demonstrated history in full-stack development. Years of experience developing with Javascript/CSS, using a variety of popular frameworks (Ember, React, Aurelia, Vue, ...), writing enterprise back-end software, developing software solutions for cloud (AWS, GCS), as well as automated testing/build configurations."
   },
   "education": [
@@ -18,11 +33,25 @@
   ],
   "experiences": [
     {
+      "company": "Solace",
+      "position": "Full Stack Software Developer",
+      "startDate": "2017-05-01",
+      "endDate": "2017-09-01",
+      "summary": "Worked on the Solace Cloud team, developing a messaging solution offered as service.",
+      "highlights": [
+        "Deploying software as a service on popular cloud services",
+        "Scalable back end architecture experience using Spring",
+        "Designing SPA's using Aurelia",
+        "Build tool configuration using Ansible",
+        "Unit testing enterprise code"
+      ]
+    },
+    {
       "company": "Ciena",
       "position": "Software Developer",
       "website": "http://ciena.com",
       "startDate": "2015-09-21",
-      "endDate": "2016-09-16",
+      "endDate": "2017-04-20",
       "summary": "Worked with amazing talent on the front and back end of products BluePlanet, IceBreaker, and Frost UX style guide.",
       "highlights": [
         "Used Ember.js to rapidly create and prototype web apps",
@@ -94,7 +123,7 @@
   "skills": [
     {
       "name": "Web Development",
-      "level": "advanced",
+      "level": "master",
       "keywords": [
         "HTML5",
         "CSS3",
@@ -108,7 +137,7 @@
     },
     {
       "name": "Software Design",
-      "level": "intermediate",
+      "level": "advanced",
       "keywords": [
         "Java",
         "C Language",
@@ -220,6 +249,7 @@
   ],
   "footer": {
     "social": {
+      "website": "https://srowhani.github.io",
       "profiles": [
         {
           "network": "GitHub",
