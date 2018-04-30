@@ -10,7 +10,7 @@ module.exports = function (defaults) {
       ]
     },
     fingerprint: {
-      exclude: ['images/*.png']
+      exclude: ['images/**/*']
     }
   });
 
