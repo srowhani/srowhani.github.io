@@ -218,9 +218,10 @@ export default Ember.Component.extend({
     	length: 15,
     	radius: (document.querySelector('#lead-content').offsetWidth / 10)
     });
-    const video = document.querySelector('video');
-    const initial = parseInt(getComputedStyle(video).top);
+		const video = document.querySelector('video');
+		video.play();
 
+    const initial = parseInt(getComputedStyle(video).top);
 		this._animFunction = _ => {
       requestAnimationFrame(() =>
         video.style.top = initial + document.documentElement.scrollTop / 1.2 + 'px'
