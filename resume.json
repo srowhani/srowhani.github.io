@@ -1,0 +1,308 @@
+{
+  "lead": {
+    "name": "Seena Rowhani",
+    "position": "Software Developer"
+  },
+  "about": {
+    "languages": [
+      {
+        "language": "English",
+        "fluency": "native speaker"
+      },
+      {
+        "language": "Farsi",
+        "fluency": "fluent"
+      }
+    ],
+    "location": {
+      "city": "Ottawa",
+      "countryCode": "CA",
+      "region": "Ontario"
+    },
+    "description": "Passionate developer with a demonstrated history in full-stack development. Years of experience developing with Javascript/CSS, using a variety of popular frameworks (Ember, React, Aurelia, Vue, ...), writing enterprise back-end software, developing software solutions for cloud (AWS, GCS), as well as automated testing/build configurations."
+  },
+  "education": [
+    {
+      "institution": "Carleton University",
+      "area": "Computer Science: Honours in Software Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2013-09-07",
+      "endDate": "2018-05-22",
+      "gpa": "10.5"
+    }
+  ],
+  "experiences": [
+    {
+      "company": "Radar Relay",
+      "position": "Contract Full Stack Software Developer",
+      "startDate": "2018-06-20",
+      "endDate": "2018-09-01",
+      "summary": "Relayer for the 0x protocol, acting as an exchange for cryptocurrencies",
+      "highlights": [
+        "Added support for hardware wallets, including features like address pagination and multiple key derivation strategies.",
+        "Developing with 0x.js, signing transactions offline, and broadcasting the result on Ethereum blockchain.",
+        "Designing SPA's using Typescript + Vue + Vuex."
+      ]
+    },
+    {
+      "company": "Solace",
+      "position": "Full Stack Software Developer",
+      "startDate": "2017-05-01",
+      "endDate": "2017-09-01",
+      "summary": "Worked on the Solace Cloud team, developing a messaging solution offered as service.",
+      "highlights": [
+        "Deploying software as a service on popular cloud services",
+        "Scalable back end architecture experience using Spring",
+        "Designing SPA's using Aurelia",
+        "Build tool configuration using Ansible",
+        "Unit testing enterprise code"
+      ]
+    },
+    {
+      "company": "Ciena",
+      "position": "Software Developer",
+      "website": "http://ciena.com",
+      "startDate": "2015-09-21",
+      "endDate": "2017-04-20",
+      "summary": "Worked with amazing talent on the front and back end of products BluePlanet, IceBreaker, and Frost UX style guide.",
+      "highlights": [
+        "Used Ember.js to rapidly create and prototype web apps",
+        "Automated builds, TeamCity and Travis, and ember-deploy to improve workflow",
+        "Command line tools to assist PV contribute to testing ecosystem",
+        "Created Ember addons to be used as tools for other developers as a standard",
+        "Programming experience with Javascript ES6 (using Babel}, and node module exports",
+        "Back end using Java's Jersey library, and Google's GSON to parse requests.",
+        "Canvas and d3 SVG visualizations to display complex systems"
+      ]
+    },
+    {
+      "company": "Nokia (formerly Alcatel-Lucent)",
+      "position": "Software Designer",
+      "website": "https://www.alcatel-lucent.com/",
+      "startDate": "2015-05-12",
+      "endDate": "2015-09-15",
+      "summary": "Developed along side of extremely talented designers and testers, refining and designing popular applications that would be used both internally and externally.",
+      "highlights": [
+        "Yeoman application scaffolding",
+        "Developed features for Web Applications using popular industry tools",
+        "Experience with popular build, automation, and development interfaces",
+        "Manipulation of both Javascript and Java code base, for front and back-end development",
+        "Created and maintained build tools used by other developers"
+      ]
+    },
+    {
+      "company": "TekWorthy",
+      "position": "Web Application Developer",
+      "website": "http://www.tekworthy.com/",
+      "startDate": "2014-11-12",
+      "endDate": "2015-02-04",
+      "summary": "Developed a wide array of web applications for clients to meet their needs, in a given time frame.",
+      "highlights": [
+        "MeteorJS",
+        "Socket Client-Server Development",
+        "MongoDB - No SQL database"
+      ]
+    },
+    {
+      "company": "Carleton University",
+      "position": "Teaching Assistant",
+      "website": "http://carleton.ca",
+      "startDate": "2014-09-14",
+      "endDate": "2016-06-09",
+      "summary": "Taught many popular programming courses to mainly first year students, aiding them in the process of learning.",
+      "highlights": [
+        "Facilitate weekly office hours, in order to ensure that students are fully understanding the course material, and to provide extra attention to those that need it.",
+        "Conduct tutorial sessions, where students are able to collaboratively complete practice assignments and express their concerns or troubles and work towards a resolution",
+        "Revise and evaluate the students’ tests and assignments so that they can benefit from constructive feedback, and ultimately improve their academic performance.",
+        "Collaborated with colleagues and professors to ensure equality between students of different learning stages, such that everyone can be accommodated."
+      ]
+    },
+    {
+      "company": "CafeX (formerly Vayyoo)",
+      "position": "Web Developer",
+      "website": "http://vayyoo.com/www/main/",
+      "startDate": "2013-05-22",
+      "endDate": "2013-08-15",
+      "summary": "",
+      "highlights": [
+        "Developed a ‘Getting Started’ application using Javascript, CSS, as well as various JS templating libraries, to introduce new clients to the websites available interfaces.",
+        "Debugged iOS, Android, and Web Applications, and created bug reports and appropriate ‘push’ or feature requests to accommodate the clients’ needs.",
+        "Tested Java backend server for time complexity, as well as security and vulnerability. Essentially making sure that the REST API that they were using was working as intended.",
+        "Gained insight into working well with others, time management, and collaboration."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "master",
+      "keywords": [
+        "HTML5",
+        "CSS3",
+        "Javascript",
+        "Ember.js",
+        "React",
+        "Vue.js",
+        "Meteor",
+        "Aurelia"
+      ]
+    },
+    {
+      "name": "Software Design",
+      "level": "advanced",
+      "keywords": [
+        "Java",
+        "C Language",
+        "C++",
+        "Python",
+        "Golang",
+        "Android",
+        "Node.js"
+      ]
+    },
+    {
+      "name": "Automation, Building, and Testing",
+      "level": "advanced",
+      "keywords": [
+        "Mocha",
+        "Chai",
+        "qUnit",
+        "Gulp",
+        "Jasmine"
+      ]
+    }
+  ],
+  "contact": {
+    "email": "c2VlbmFyb3doYW5pOTVAZ21haWwuY29t"
+  },
+  "header": {
+    "sections": [
+      {
+        "href": "#about",
+        "title": "About"
+      },
+      {
+        "href": "#experience",
+        "title": "Experience"
+      },
+      {
+        "href": "#education",
+        "title": "Education"
+      },
+      {
+        "href": "#projects",
+        "title": "Projects"
+      },
+      {
+        "href": "#skills",
+        "title": "Skills"
+      },
+      {
+        "href": "#organizations",
+        "title": "Organizations"
+      },
+      {
+        "href": "#contact",
+        "title": "Contact Me"
+      }
+    ]
+  },
+  "organizations": [
+    {
+      "login": "Gitskarios",
+      "url": "https://github.com/gitskarios",
+      "avatar_url": "images/11989662.png"
+    },
+    {
+      "login": "trendify-app",
+      "url": "https://github.com/trendify-app",
+      "avatar_url": "images/37960144.png"
+    },
+    {
+      "login": "diabuddy-app",
+      "url": "https://github.com/diabuddy",
+      "avatar_url": "images/38800278.png"
+    }
+  ],
+  "projects": [
+    {
+      "name": "sl-auto-fix",
+      "img": "images/sass-lint-auto-fix.png",
+      "url": "https://github.com/srowhani/sass-lint-auto-fix",
+      "tldr": "Automatically resolve s(a|c)ss linting issues",
+      "description": "Issues are resolved by parsing the s(a|c)ss as an ast, traversing through it, and performing modifications"
+    },
+    {
+      "name": "diabuddy",
+      "img": "images/diabuddy.jpg",
+      "url": "https://hhottawa2018.sparkboard.com/project/5ae3ca2cd74e511f00f387c2",
+      "tldr": "Submission for Hacking Health 2018",
+      "description": "Health care application focused on helping children diagnosed with diabetes reinforce positive habits on keeping track of their data"
+    },
+    {
+      "name": "trendify-app",
+      "img": "images/trendify.png",
+      "url": "https://devpost.com/software/trendify-bdsve7",
+      "tldr": "Submission for CUHacking 2018",
+      "description": "A web/iOS based game which uses open source google trend module powered by STDLIB to allow users to compete."
+    },
+    {
+      "name": "proccoli-pm",
+      "img": "images/proccoli.png",
+      "url": "http://github.com/proccoli/proccoli-pm",
+      "tldr": "Process Manager written in python.",
+      "description": "Uses linux's proc virtual fs to persist information and metrics about the system, and uses urwid console interface to render it."
+    },
+    {
+      "name": "democracy",
+      "img": "images/democracy.png",
+      "url": "http://github.com/srowhani/democracy",
+      "tldr": "Visualize voting based on the contents and frequency of tweet hashtags via Twitters Stream API.",
+      "description": "Built using: express, socket.io, d3, Ember.js"
+    }
+  ],
+  "footer": {
+    "social": {
+      "website": "https://srowhani.github.io",
+      "profiles": [
+        {
+          "network": "GitHub",
+          "username": "srowhani",
+          "url": "http://github.com/srowhani",
+          "icon": "fa-github"
+        },
+        {
+          "network": "LinkedIn",
+          "username": "Seena Rowhani",
+          "url": "https://ca.linkedin.com/in/srowhani",
+          "icon": "fa-linkedin"
+        },
+        {
+          "network" : "Facebook",
+          "username": "seena.rowhani",
+          "url" : "https://www.facebook.com/seena.rowhani",
+          "icon": "fa-facebook"
+        }
+      ]
+    }
+  },
+  "manifest": {
+    "name": "Portfolio - Seena Rowhani",
+    "short_name": "Portfolio",
+    "description": "",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#3498db",
+    "theme_color": "#217dbb",
+    "icons": [
+      {
+        "src": "favicon.ico",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ],
+    "apple": {
+      "statusBarStyle": "black-translucent"
+    }
+  }
+}
