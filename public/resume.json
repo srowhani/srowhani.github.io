@@ -33,6 +33,18 @@
   ],
   "experiences": [
     {
+      "company": "Radar Relay",
+      "position": "Contract Full Stack Software Developer",
+      "startDate": "2018-06-20",
+      "endDate": "2018-09-01",
+      "summary": "Relayer for the 0x protocol, acting as an exchange for cryptocurrencies",
+      "highlights": [
+        "Added support for hardware wallets, including features like address pagination and multiple key derivation strategies.",
+        "Developing with 0x.js, signing transactions offline, and broadcasting the result on Ethereum blockchain.",
+        "Designing SPA's using Typescript + Vue + Vuex."
+      ]
+    },
+    {
       "company": "Solace",
       "position": "Full Stack Software Developer",
       "startDate": "2017-05-01",
@@ -202,19 +214,14 @@
       "avatar_url": "images/11989662.png"
     },
     {
-      "login": "migrate-app",
-      "url": "https://github.com/migrate-app",
-      "avatar_url": "images/22104835.png"
-    },
-    {
       "login": "trendify-app",
       "url": "https://github.com/trendify-app",
       "avatar_url": "images/37960144.png"
     },
     {
-      "login": "proccoli-pm",
-      "url": "https://github.com/proccoli",
-      "avatar_url": "images/22964937.png"
+      "login": "diabuddy-app",
+      "url": "https://github.com/diabuddy",
+      "avatar_url": "images/38800278.png"
     }
   ],
   "projects": [
